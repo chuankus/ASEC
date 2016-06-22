@@ -13,7 +13,7 @@
                         <ul class="breadcrumbs">
                             <li><a href="#">Trang Chủ</a></li>
                             <li><a href="#">Chuyên Mục</a></li>
-                            <li>Albums</li>
+                            <li>Album</li>
                         </ul>
                     </div>
                 </div>
