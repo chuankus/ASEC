@@ -1,0 +1,351 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ASEC | Trung Tâm Ngoại Ngữ Chân Trời Mới</title>
+    <!-- Define Charset -->
+    <meta charset="utf-8" />
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Page Description and Author -->
+    <meta name="description" content="ASEC | Trung Tâm Ngoại Ngữ Chân Trời Mới" />
+    <meta name="author" content="Tai" />
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
+
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen" />
+
+    <!-- CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+    <!-- Responsive CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />
+
+    <!-- Css3 Transitions Styles  -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
+
+    <!-- Color CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
+
+    <!-- Custom CSS Styles  -->
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <%-- Animate Wow --%>
+    <link href="css/animate_wow.css" rel="stylesheet" />
+
+    <%-- PrettyPhoto --%>
+    <link href="css/prettyPhoto.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+
+            <!-- Start Header Section -->
+            <div class="hidden-header"></div>
+            <header class="clearfix">
+
+                <!-- Start Top Bar -->
+                <div class="top-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <!-- Start Contact Info -->
+                                <ul class="contact-details">
+                                    <li><a href="#"><i class="fa fa-map-marker"></i>&nbsp;253B Thạch Lam, P. Phú Thạnh, Q. Tân Phú, TP. Hồ Chí Minh</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope-o"></i>&nbsp;info@americantop.edu.vn</a></li>
+                                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp;086 267 6949</a></li>
+                                </ul>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- .col-md-6 -->
+                            <div class="col-md-5">
+                                <!-- Start Social Links -->
+                                <ul class="social-list">
+                                    <li>
+                                        <a class="facebook itl-tooltip" data-placement="bottom" target="_blank" title="Facebook" href="https://www.facebook.com/anhnguchantroimoi/"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="dribbble itl-tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="flickr itl-tooltip" data-placement="bottom" title="Flickr" href="#"><i class="fa fa-flickr"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="tumblr itl-tooltip" data-placement="bottom" title="Tumblr" href="#"><i class="fa fa-tumblr"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="vimeo itl-tooltip" data-placement="bottom" title="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="skype itl-tooltip" data-placement="bottom" title="Skype" href="#"><i class="fa fa-skype"></i></a>
+                                    </li>
+                                </ul>
+                                <!-- End Social Links -->
+                            </div>
+                            <!-- .col-md-6 -->
+                        </div>
+                        <!-- .row -->
+                    </div>
+                    <!-- .container -->
+                </div>
+                <!-- .top-bar -->
+                <!-- End Top Bar -->
+
+
+                <!-- Start  Logo & Naviagtion  -->
+                <div class="navbar navbar-default navbar-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <!-- Stat Toggle Nav Link For Mobiles -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <!-- End Toggle Nav Link For Mobiles -->
+                            <a class="navbar-brand" href="Default2.aspx">
+                                <img alt="logo" src="images/logo.png" class="img-responsive logo" />
+                            </a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <!-- Stat Search -->
+                            <div class="search-side">
+                                <a class="show-search"><i class="fa fa-search"></i></a>
+                                <div class="search-form">
+                                    <input type="text" value="" name="s" id="s" placeholder="Tìm kiếm..." />
+                                </div>
+                            </div>
+                            <!-- End Search -->
+                            <!-- Start Navigation List -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <%-- Start Menu --%>
+                                <asp:Repeater ID="rpMenu" runat="server">
+                                    <ItemTemplate>
+                                        <li>
+                                            <a href="<%# Eval("Permalink") %>"><%# Eval("ItemName") %></a>
+                                            <ul class="dropdown">
+                                                <%-- Start Sub Menu --%>
+                                                <asp:Repeater ID="rpSubMenu" runat="server" DataSource='<%# SubMenu(Eval("MenuID").ToString()) %>'>
+                                                    <ItemTemplate>
+                                                        <li><a href="/<%# Eval("linkMenuCon") %>"><%# Eval("CategoryName").ToString() %></a></li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                                <%-- End Sub Menu --%>
+                                            </ul>
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                                <%-- End Menu --%>
+                            </ul>
+                            <!-- End Navigation List -->
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Start -->
+                    <ul class="wpb-mobile-menu">
+                        <%-- Start Mobile Menu --%>
+                        <asp:Repeater ID="rpMobileMenu" runat="server">
+                            <ItemTemplate>
+                                <li>
+                                    <a href="<%# Eval("Permalink") %>"><%# Eval("ItemName") %></a>
+                                    <ul class="dropdown">
+                                        <%-- Start Sub Mobile Menu --%>
+                                        <asp:Repeater ID="rpMoblieSubMenu" runat="server" DataSource='<%# SubMenu(Eval("MenuID").ToString()) %>'>
+                                            <ItemTemplate>
+                                                <li><a href="/<%# Eval("linkMenuCon") %>"><%# Eval("CategoryName") %></a></li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                        <%-- End Sub Mobile Menu --%>
+                                    </ul>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <%-- End Mobile Menu --%>
+                    </ul>
+                    <!-- Mobile Menu End -->
+
+                </div>
+                <!-- End Header Logo & Naviagtion -->
+
+            </header>
+            <!-- End Header Section -->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!-- Start Footer Section -->
+            <footer>
+                <div class="container">
+                    <div class="row footer-widgets">
+
+
+                        <!-- Start Subscribe & Social Links Widget -->
+                        <div class="col-md-4 col-xs-12">
+                            <div class="footer-widget mail-subscribe-widget">
+                                <h4>FANPAGE<span class="head-line"></span></h4>
+
+                                <!-- Fanpage FB-->
+                                <div class="fb-page"
+                                    data-href="https://www.facebook.com/anhnguchantroimoi/"
+                                    data-width="380"
+                                    data-hide-cover="false"
+                                    data-show-facepile="true"
+                                    data-show-posts="false">
+                                </div>
+                                <!-- End Fanpage FB-->
+
+                            </div>
+                        </div>
+                        <!-- .col-md-3 -->
+                        <!-- End Subscribe & Social Links Widget -->
+
+
+                        <!-- Start Twitter Widget -->
+                        <div class="col-md-4 col-xs-12">
+                            <div class="footer-widget twitter-widget">
+                                <h4>BÀI VIẾT MỚI NHẤT<span class="head-line"></span></h4>
+                                <ul>
+                                    <li>
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#">
+                                                    <img class="img-responsive" src="images/news.jpg" alt="..." />
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="media-heading"><a href="#">HỌC TIẾNG ANH THƯƠNG MẠI TRÊN NHẬT BÁO PHỐ WALL</a></h5>
+                                                <span>Jul 29 2013</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#">
+                                                    <img class="img-responsive" src="images/news-2.jpg" alt="..." />
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="media-heading"><a href="#">LÀM THẾ NÀO CHO TRẺ MỘT MÙA HÈ LÝ TƯỞNG?.</a></h5>
+                                                <span>Jul 29 2013</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <a href="#">
+                                                    <img class="img-responsive" src="images/news-3.jpg" alt="..." />
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h5 class="media-heading"><a href="#">KHỞI ĐỘNG 'ĐẤU TRƯỜNG' TRANH TÀI TIẾNG ANH</a></h5>
+                                                <span>Jul 29 2013</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- .col-md-3 -->
+                        <!-- End Twitter Widget -->
+
+
+                        <!-- Start Contact Widget -->
+                        <div class="col-md-4 col-xs-12">
+                            <div class="footer-widget contact-widget">
+                                <h4>THÔNG TIN LIÊN HỆ<span class="head-line"></span></h4>
+                                <ul>
+                                    <li><span>Trung Tâm Ngoại Ngữ ASEC</span></li>
+                                    <li><span>Điện thoại:</span> 086 267 6949</li>
+                                    <li><span>Email:</span> info@americantop.edu.vn</li>
+                                    <li><span>Website:</span> <a href="asec.edu.vn" style="color: white">www.asec.edu.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- .col-md-3 -->
+                        <!-- End Contact Widget -->
+
+
+                    </div>
+                    <!-- .row -->
+
+                </div>
+            </footer>
+            <!-- End Footer Section -->
+
+        </div>
+
+        <!-- Go To Top Link -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    </form>
+
+    <!-- FB Fanpage Script-->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=1585669778363631";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- End FB Fanpage -->
+
+    <!-- JS  -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.migrate.js"></script>
+    <script type="text/javascript" src="js/modernizrr.js"></script>
+    <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/count-to.js"></script>
+    <script type="text/javascript" src="js/jquery.textillate.js"></script>
+    <script type="text/javascript" src="js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="js/mediaelement-and-player.js"></script>
+    <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            new WOW().init();
+
+            if ($(window).innerWidth() < 992) {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() >= 0) {
+                        $(".navbar-top").add("<br />");
+                    }
+                });
+                $(".logo").css("margin-top", "-18%");
+            }
+
+            //Albums Funday
+            $('[rel="prettyPhoto[funday]"]').prettyPhoto();
+        });
+    </script>
+</body>
+</html>

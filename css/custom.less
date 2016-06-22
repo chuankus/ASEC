@@ -1,0 +1,265 @@
+﻿.border-radius(@radius) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+/* start logo */
+.logo {
+    width: 100%;
+    /*height: auto;*/
+    height: auto;
+    margin-top: -8%;
+}
+
+.navbar-default {
+    .navbar-collapse {
+        height: 140px;
+
+        ul.navbar-nav {
+            padding-top: 2%;
+        }
+
+        div.search-side {
+            padding-top: 2%;
+        }
+    }
+}
+/* end logo */
+
+
+/*start service */
+.service {
+    .service-content {
+        p {
+            text-align: justify;
+        }
+    }
+}
+/*end service */
+
+
+/*start google map*/
+#map {
+    .embed-responsive {
+        height: 350px;
+
+        iframe {
+            height: 350px;
+        }
+    }
+}
+/*end google map*/
+
+
+/*start input search*/
+.search-form input {
+    font-size: 13px;
+}
+/*end input search*/
+
+
+/*phan trang*/
+.pager {
+    input {
+        color: #fff;
+        background-color: #ee3733;
+        border-color: #d43f3a;
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.3333333;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: #666;
+            transition: all 0.2s linear;
+        }
+    }
+
+    span {
+        a {
+            margin: 0 5px;
+        }
+    }
+}
+/*end phan trang*/
+
+
+/*slide gioi thieu*/
+.touch-slider {
+    .item {
+        img {
+            width: 600px;
+            height: 300px;
+        }
+    }
+}
+/*end slide gioi thieu*/
+
+
+/* footer middle column */
+.twitter-widget {
+    .media {
+        .media-heading {
+            a {
+                color: white;
+            }
+        }
+
+        a {
+            img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        span {
+            color: white;
+        }
+    }
+}
+/* end footer middle column */
+
+
+/* .bg-primary, .bg-info, .bg-success, .bg-warning, .bg-danger */
+.bg-info, .bg-success, .bg-warning, .bg-danger, .bg-primary {
+    padding: 10px;
+}
+/* end .bg-primary, .bg-info, .bg-success, .bg-warning, .bg-danger */
+
+
+/*slider trang chu*/
+.carousel-inner {
+    .item {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+/*end slider trang chu*/
+
+
+/*button*/
+.btn-system:hover {
+    box-shadow: none;
+    -o-box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    transition: all 0.3s linear;
+}
+/*end button*/
+
+
+/*album */
+.portfolio-thumb img {
+    width: 256px;
+    height: 176px;
+}
+/*end album */
+
+
+/*welcome trang chủ*/
+#Welcome {
+    background-color: #EEEEEE;
+    padding: 4% 0;
+
+    .title {
+        margin-bottom: 2%;
+        font-weight: bold;
+        font-size: 300%;
+    }
+
+    #myWelcome {
+        ul.nav-pills {
+            border-bottom: 1px solid #2196F3;
+            margin-bottom: 4%;
+
+            li.active {
+                a {
+                    background-color: transparent;
+                    border-bottom: 3px solid #2196F3;
+                }
+            }
+
+            li {
+                margin-right: 5%;
+
+                a {
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 120%;
+                    color: black;
+                    font-weight: bold;
+                    .border-radius(0px);
+                    border-bottom: 3px solid transparent;
+
+                    &:hover {
+                        color: #2196F3;
+                    }
+                }
+            }
+        }
+
+        .pic {
+            height: 300px;
+            padding-left: 0;
+        }
+
+        .content {
+            position: relative;
+            left: 0;
+            top: 0;
+            padding: 0;
+            text-align: left;
+            color: black;
+
+            .title {
+                margin-top: 0;
+                font-size: 150%;
+                margin-bottom: 3%;
+                text-shadow: none;
+            }
+
+            .meta {
+                line-height: 200%;
+                text-shadow: none;
+                overflow: hidden;
+                height: 200px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 7;
+            }
+
+            .btn {
+                background-color: transparent;
+                .border-radius(0px);
+                padding: 2% 4%;
+                color: black;
+                transition: all 0.2s linear;
+                margin-top: 2%;
+
+                &:hover {
+                    background-color: #2196F3;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+/*end welcome trang chủ*/
