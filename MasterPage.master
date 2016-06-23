@@ -44,6 +44,8 @@
     <%-- PrettyPhoto --%>
     <link href="css/prettyPhoto.css" rel="stylesheet" />
 
+    <%-- File Css Tạm --%>
+    <link href="css/moduleStyle.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
