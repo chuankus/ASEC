@@ -95,42 +95,58 @@
                 <div class="row">
 
                     <!-- Start Service Icon 1 -->
+
                     <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
-                        <div class="service-icon">
-                            <img src="images/icon/icon.svg" alt="icon" class="img-responsive" />
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                <div class="service-icon">
+                                    <img src="images/icon/icon.svg" alt="icon" class="img-responsive" />
+                                </div>
+                                <div class="service-content">
+                                    <h3>Tầm Nhìn</h3>
+                                    <p>Với mong muốn xây dựng một tổ chức đào tạo anh ngữ hàng đầu trong khu vực, ASEC sẽ từng bước hoàn thiện nhằm khơi dậy tiềm năng của mỗi học viên thông qua môi trường học tập năng động, hiện đại và chất lượng dành cho mọi đối tượng.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service-content">
-                            <h3>Tầm Nhìn</h3>
-                            <p>Với mong muốn xây dựng một tổ chức đào tạo anh ngữ hàng đầu trong khu vực, ASEC sẽ từng bước hoàn thiện nhằm khơi dậy tiềm năng của mỗi học viên thông qua môi trường học tập năng động, hiện đại và chất lượng dành cho mọi đối tượng.</p>
-                        </div>
+
                     </div>
                     <!-- End Service Icon 1 -->
 
                     <!-- Start Service Icon 2 -->
                     <div class="col-md-4 col-sm-6 service-box service-center wow fadeIn">
-                        <div class="service-icon">
-                            <img src="images/icon/icon2.svg" alt="icon" class="img-responsive" />
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                <div class="service-icon">
+                                    <img src="images/icon/icon2.svg" alt="icon" class="img-responsive" />
+                                </div>
+                                <div class="service-content">
+                                    <h3>Sứ Mệnh</h3>
+                                    <p>Giúp thế hệ trẻ Việt Nam vững vàng, tự tin hội nhập vào môi trường Quốc tế là sứ mệnh của chúng tôi.</p>
+                                    <p>Không chỉ là sự thành thạo, lưu loát trong việc sử dụng ngôn ngữ như người bản xứ, mà học viên còn được bổ trợ những kiến thức, kỹ năng mềm giúp hòa nhập nhanh với môi trường quốc tế.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service-content">
-                            <h3>Sứ Mệnh</h3>
-                            <p>Giúp thế hệ trẻ Việt Nam vững vàng, tự tin hội nhập vào môi trường Quốc tế là sứ mệnh của chúng tôi.</p>
-                            <p>Không chỉ là sự thành thạo, lưu loát trong việc sử dụng ngôn ngữ như người bản xứ, mà học viên còn được bổ trợ những kiến thức, kỹ năng mềm giúp hòa nhập nhanh với môi trường quốc tế.</p>
-                        </div>
+
                     </div>
                     <!-- End Service Icon 2 -->
 
                     <!-- Start Service Icon 3 -->
                     <div class="col-md-4 col-sm-6 service-box service-center wow fadeIn">
-                        <div class="service-icon">
-                            <img src="images/icon/icon3.svg" alt="icon" class="img-responsive" />
+                        <div class="panel panel-danger">
+                            <div class="panel-body">
+                                <div class="service-icon">
+                                    <img src="images/icon/icon3.svg" alt="icon" class="img-responsive" />
+                                </div>
+                                <div class="service-content">
+                                    <h3>Giá Trị Cốt Lõi</h3>
+                                    <p>Giá trị cốt lõi mà chúng tôi hướng đến là <strong>Con Người</strong>, xem đây là nhân tố tiên quyết, quan trọng nhất. Chúng tôi đề cao:</p>
+                                    <p>- Chữ "Tâm" trong nghề, sự tận tâm trong từng công việc.</p>
+                                    <p>- Sự uy tín với khách hàng.</p>
+                                    <p>- Lòng nhiệt huyết, nỗ lực vươn đến sự hoàn thiện.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service-content">
-                            <h3>Giá Trị Cốt Lõi</h3>
-                            <p>Giá trị cốt lõi mà chúng tôi hướng đến là <strong>Con Người</strong>, xem đây là nhân tố tiên quyết, quan trọng nhất. Chúng tôi đề cao:</p>
-                            <p>- Chữ "Tâm" trong nghề, sự tận tâm trong từng công việc.</p>
-                            <p>- Sự uy tín với khách hàng.</p>
-                            <p>- Lòng nhiệt huyết, nỗ lực vươn đến sự hoàn thiện.</p>
-                        </div>
+
                     </div>
                     <!-- End Service Icon 3 -->
 
