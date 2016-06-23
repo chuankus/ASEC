@@ -14,7 +14,7 @@
                     <li data-target="#main-slide" data-slide-to="2"></li>
                     <li data-target="#main-slide" data-slide-to="3"></li>
                 </ol>
-                <!--/ Indicators end-->
+                <!--/ Indicators end -->
 
                 <!-- Carousel inner -->
                 <div class="carousel-inner">
