@@ -104,8 +104,8 @@
 .touch-slider {
     .item {
         img {
-            width: 600px;
-            height: 300px;
+            width:100%;
+            height:auto;
         }
     }
 }
@@ -155,13 +155,21 @@
 /*end slider trang chu*/
 
 
-/*button*/
-.btn-system:hover {
-    box-shadow: none;
-    -o-box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    transition: all 0.3s linear;
+/*button 3D*/
+.btn-system {
+    box-shadow: 0 6px #ee3733;
+    -o-box-shadow: 0 6px #ee3733;
+    -moz-box-shadow: 0 6px #ee3733;
+    -webkit-box-shadow: 0 6px #ee3733;
+
+    &:hover {
+        transition: all 0.1s linear;
+        box-shadow: 0 4px #ee3733;
+        -o-box-shadow: 0 4px #ee3733;
+        -moz-box-shadow: 0 4px #ee3733;
+        -webkit-box-shadow: 0 4px #ee3733;
+        top: 2px;
+    }
 }
 /*end button*/
 
@@ -174,25 +182,479 @@
 /*end album */
 
 
-/*menu trang chủ*/
-.navbar-default {
-    .navbar-nav {
-        li {
-            a {
-                color: black !important;
-            }
+//fix icon phần CHÀO MỪNG tren trang chủ
+.service-center {
+    .service-icon {
+        margin-bottom: 14px;
+        margin-left: 30%;
+        width: 40%;
+    }
+}
 
-            &:hover {
-                a {
-                    color: #ee3733;
-                }
+.service-center {
+    .panel {
+        height: 500px;
+
+        .service-content {
+            p {
+                font-size: 18px;
             }
         }
     }
 }
+//end fix icon phần CHÀO MỪNG tren trang chủ
 
-.navbar-default .navbar-nav > li > a.active, .navbar-default .navbar-nav > li:hover > a {
-    border-bottom: none !important;
+
+/*circular bootstrap chương trình học*/
+.chuongtrinhhoc {
+    margin-top: 40px;
+
+    .board {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        background: #fff;
+        /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+    }
+
+    .board .nav-tabs {
+        position: relative;
+        /* border-bottom: 0; */
+        /* width: 80%; */
+        margin: 40px auto;
+        margin-bottom: 0;
+        box-sizing: border-box;
+    }
+
+    .board > div.board-inner {
+        background-size: 30%;
+    }
+
+    p.narrow {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .liner {
+        height: 5px;
+        background: #ff6633;
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        color: #555555;
+        cursor: default;
+        /* background-color: #ffffff; */
+        border: 0;
+        border-bottom-color: transparent;
+    }
+
+    span.round-tabs {
+        width: 200px;
+        height: 200px;
+        line-height: 70px;
+        display: inline-block;
+        border-radius: 100px;
+        background: white;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    span.round-tabs.one {
+        color: rgb(34, 194, 34);
+    }
+
+    li.active span.round-tabs.one {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: rgb(34, 194, 34);
+    }
+
+    span.round-tabs.two {
+        color: #febe29;
+    }
+
+    li.active span.round-tabs.two {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #febe29;
+    }
+
+    span.round-tabs.three {
+        color: #3e5e9a;
+    }
+
+    li.active span.round-tabs.three {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #3e5e9a;
+    }
+
+    span.round-tabs.four {
+        color: #f1685e;
+    }
+
+    li.active span.round-tabs.four {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #f1685e;
+    }
+
+    span.round-tabs.five {
+        color: #B94BCA;
+        border: 2px solid #B94BCA;
+    }
+
+    li.active span.round-tabs.five {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #B94BCA;
+    }
+
+    span.round-tabs.six {
+        color: #4DCDB7;
+        border: 2px solid #4DCDB7;
+    }
+
+    li.active span.round-tabs.six {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #4DCDB7;
+    }
+
+    span.round-tabs.seven {
+        color: #1AA4FC;
+        border: 2px solid #1AA4FC;
+    }
+
+    li.active span.round-tabs.seven {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #1AA4FC;
+    }
+
+    .nav-tabs > li.active > a span.round-tabs {
+        background: #fafafa;
+    }
+
+    .nav-tabs > li {
+        width: 25%;
+    }
+
+    li.active:before {
+        content: " ";
+        position: absolute;
+        left: 45%;
+        opacity: 0;
+        margin: 0 auto;
+        bottom: -2px;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+        z-index: 1;
+        transition: 0.2s ease-in-out;
+    }
+
+    li:after {
+        content: " ";
+        position: absolute;
+        left: 45%;
+        opacity: 0;
+        margin: 0 auto;
+        bottom: 0px;
+        border: 5px solid transparent;
+        border-bottom-color: #ddd;
+        transition: 0.1s ease-in-out;
+    }
+
+    li.active:after {
+        content: " ";
+        position: absolute;
+        left: 45%;
+        opacity: 1;
+        margin: 0 auto;
+        bottom: 0px;
+        border: 10px solid transparent;
+        border-bottom-color: #ddd;
+    }
+
+    .nav-tabs > li a {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        border-radius: 100%;
+        padding: 0;
+    }
+
+    .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+    .tab-content {
+    }
+
+    .tab-pane {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .tab-content .head {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    .btn-outline-rounded {
+        padding: 10px 40px;
+        margin: 20px 0;
+        border: 2px solid transparent;
+        border-radius: 25px;
+    }
+
+    .btn.green {
+        background-color: #5cb85c;
+        /*border: 2px solid #5cb85c;*/
+        color: #ffffff;
+    }
+}
+/*end circular bootstrap chương trình học*/
+
+
+/*parallax trang chủ*/
+.purchase {
+    background: url(../images/banner/bg7-min.jpg) no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+/*end parallax trang chủ*/
+
+
+/*contact form*/
+#contact-form {
+    input[type="text"], textarea {
+        border: 1px solid #d43f3a;
+
+        &:focus {
+            border-color: #d43f3a;
+        }
+    }
+}
+/*end contact form*/
+
+
+/*footer contact-widget*/
+.contact-widget {
+    .trungtam {
+        color: white;
+        font-size: 26px;
+        margin-bottom:20px;
+    }
+}
+/*end footer contact-widget*/
+
+
+/*.head-line*/
+.head-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #ee3733;
+    margin: 0;
+}
+/*end .head-line*/
+
+
+/*hinh anh xep chong chương trình học*/
+.chuongtrinhhoc {
+
+    .post-title {
+        font-size: 300%;
+        line-height: 120%;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    .post-meta {
+        font-size: 110%;
+        line-height: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .post-content {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .image1 {
+        margin-left: 30px;
+        position: absolute;
+        left: 0px;
+        z-index: 1;
+        width: 350px;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .image2 {
+        position: absolute;
+        top: 100px;
+        left: 30%;
+        z-index: 2;
+        width: 350px;
+        height: 300px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+/*end hinh anh xep chong chương trình học*/
+
+
+/*post-meta*/
+.post-meta {
+    overflow: hidden;
+    height: 70px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+/*end post-meta*/
+
+
+/*post-bottom*/
+/*end post-bottom*/
+
+
+/*btn chương trình học*/
+.btn-chuongtrinhhoc {
+    z-index: 2;
+}
+/*end btn chương trình học*/
+
+
+/*effect hover button*/
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+/*effect hover button*/
+
+
+/*.red*/
+.red {
     color: #ee3733;
 }
-/*end menu trang chủ*/
+/*end .red*/
+
+
+/*.thin, .title*/
+.thin {
+    font-weight: 300;
+}
+
+.title {
+    margin-bottom: 2%;
+}
+/*end .thin*/
+
+
+/*footet*/
+.footer-widgets {
+    font-size: 16px;
+
+    .title {
+        color: white;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .head-line {
+        color: white;
+        background-color: white !important;
+    }
+
+    span, li {
+        color: white !important;
+    }
+}
+/*end footer*/
+
+
+/*title-page*/
+.title-page{
+    color:white;
+}
+/*end title-page*/
+
+
+/*start input search*/
+.search-form input {
+    font-size: 13px;
+}
+/*end input search*/
+
+
+/*start service */
+.service {
+    .service-content {
+        p {
+            text-align: justify;
+        }
+    }
+}
+/*end service */

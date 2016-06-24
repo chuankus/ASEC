@@ -14,8 +14,11 @@
     <meta name="description" content="ASEC | Trung Tâm Ngoại Ngữ Chân Trời Mới" />
     <meta name="author" content="Tai" />
 
-    <!-- Bootstrap CSS  -->
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen" />
@@ -43,9 +46,6 @@
 
     <%-- PrettyPhoto --%>
     <link href="css/prettyPhoto.css" rel="stylesheet" />
-
-    <%-- File Css Tạm --%>
-    <link href="css/moduleStyle.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -62,7 +62,6 @@
                             <div class="col-md-7">
                                 <!-- Start Contact Info -->
                                 <ul class="contact-details">
-                                    <li><a href="#"><i class="fa fa-map-marker"></i>&nbsp;253B Thạch Lam, P. Phú Thạnh, Q. Tân Phú, TP. Hồ Chí Minh</a></li>
                                     <li><a href="#"><i class="fa fa-envelope-o"></i>&nbsp;info@americantop.edu.vn</a></li>
                                     <li><a href="#"><i class="fa fa-phone"></i>&nbsp;086 267 6949</a></li>
                                 </ul>
@@ -74,33 +73,6 @@
                                 <ul class="social-list">
                                     <li>
                                         <a class="facebook itl-tooltip" data-placement="bottom" target="_blank" title="Facebook" href="https://www.facebook.com/anhnguchantroimoi/"><i class="fa fa-facebook"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="dribbble itl-tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="flickr itl-tooltip" data-placement="bottom" title="Flickr" href="#"><i class="fa fa-flickr"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="tumblr itl-tooltip" data-placement="bottom" title="Tumblr" href="#"><i class="fa fa-tumblr"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="vimeo itl-tooltip" data-placement="bottom" title="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
-                                    </li>
-                                    <li>
-                                        <a class="skype itl-tooltip" data-placement="bottom" title="Skype" href="#"><i class="fa fa-skype"></i></a>
                                     </li>
                                 </ul>
                                 <!-- End Social Links -->
@@ -203,11 +175,11 @@
                         <!-- Start Subscribe & Social Links Widget -->
                         <div class="col-md-4 col-xs-12">
                             <div class="footer-widget mail-subscribe-widget">
-                                <h4>FANPAGE<span class="head-line"></span></h4>
+                                <h4 class="title">FANPAGE<span class="head-line"></span></h4>
 
                                 <!-- Fanpage FB-->
                                 <div class="fb-page"
-                                    data-href="https://www.facebook.com/anhnguchantroimoi/"
+                                    data-href="https://www.facebook.com/asecenglish/"
                                     data-width="380"
                                     data-hide-cover="false"
                                     data-show-facepile="true"
@@ -224,7 +196,7 @@
                         <!-- Start Twitter Widget -->
                         <div class="col-md-4 col-xs-12">
                             <div class="footer-widget twitter-widget">
-                                <h4>BÀI VIẾT MỚI NHẤT<span class="head-line"></span></h4>
+                                <h4 class="title">BÀI VIẾT MỚI NHẤT<span class="head-line"></span></h4>
                                 <ul>
                                     <li>
                                         <div class="media">
@@ -275,12 +247,13 @@
                         <!-- Start Contact Widget -->
                         <div class="col-md-4 col-xs-12">
                             <div class="footer-widget contact-widget">
-                                <h4>THÔNG TIN LIÊN HỆ<span class="head-line"></span></h4>
+                                <h4 class="title">THÔNG TIN LIÊN HỆ<span class="head-line"></span></h4>
                                 <ul>
-                                    <li><span>Trung Tâm Ngoại Ngữ ASEC</span></li>
+                                    <li><h1 class="trungtam">Trung Tâm Ngoại Ngữ ASEC</h1></li>
                                     <li><span>Điện thoại:</span> 086 267 6949</li>
                                     <li><span>Email:</span> info@americantop.edu.vn</li>
                                     <li><span>Website:</span> <a href="asec.edu.vn" style="color: white">www.asec.edu.vn</a></li>
+                                    <li><span>Giờ làm việc:</span> Thứ 2 - Chủ nhật: Từ 7h30 đến 21h</li>
                                 </ul>
                             </div>
                         </div>
@@ -316,7 +289,7 @@
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.migrate.js"></script>
     <script type="text/javascript" src="js/modernizrr.js"></script>
-    <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>

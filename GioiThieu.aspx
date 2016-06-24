@@ -7,12 +7,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>Giới Thiệu</h2>
+                        <h2 class="title-page">Giới Thiệu</h2>
                     </div>
                     <div class="col-md-6">
                         <ul class="breadcrumbs">
                             <li><a href="Default2.aspx">Trang Chủ</a></li>
-                            <li>Giới Thiệu</li>
+                            <li class="active">Giới Thiệu</li>
                         </ul>
                     </div>
                 </div>
@@ -65,9 +65,9 @@
                                 <div class="skill">
                                     <p>ASEC KIDS</p>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" data-percentage="80">
-                                            <span class="progress-bar-span">80%</span>
-                                            <span class="sr-only">80% Complete</span>
+                                        <div class="progress-bar progress-bar-info" role="progressbar" data-percentage="70">
+                                            <span class="progress-bar-span">70%</span>
+                                            <span class="sr-only">70% Complete</span>
                                         </div>
                                     </div>
                                 </div>
@@ -83,18 +83,18 @@
                                 <div class="skill">
                                     <p>ASEC TEENS</p>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" data-percentage="80">
-                                            <span class="progress-bar-span">80%</span>
-                                            <span class="sr-only">80% Complete</span>
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" data-percentage="75">
+                                            <span class="progress-bar-span">75%</span>
+                                            <span class="sr-only">75% Complete</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skill">
                                     <p>ASEC ADULTS</p>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" data-percentage="80">
-                                            <span class="progress-bar-span">80%</span>
-                                            <span class="sr-only">80% Complete</span>
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" data-percentage="90">
+                                            <span class="progress-bar-span">90%</span>
+                                            <span class="sr-only">90% Complete</span>
                                         </div>
                                     </div>
                                 </div>

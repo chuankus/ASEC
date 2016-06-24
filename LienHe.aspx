@@ -16,7 +16,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
 
                         <!-- Classic Heading -->
                         <h2 class="classic-title"><span>Liên Lạc</span></h2>
@@ -46,7 +46,7 @@
 
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
                         <!-- Classic Heading -->
                         <h2 class="classic-title"><span>Thông Tin</span></h2>
@@ -72,7 +72,7 @@
 
                         <!-- Info - List -->
                         <ul class="list-unstyled">
-                            <li><strong>Thứ 2 - Chủ Nhật:</strong> 8h00 đến 21h</li>
+                            <li><strong>Thứ 2 - Chủ Nhật:</strong> 7h30 đến 21h</li>
                         </ul>
 
                     </div>

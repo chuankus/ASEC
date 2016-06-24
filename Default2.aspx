@@ -91,60 +91,47 @@
         <!-- 2. Start Chào Mừng -->
         <div class="section service">
             <div class="container">
-                <h1 class="text-center">CHÀO MỪNG TỚI TRUNG TÂM NGOẠI NGỮ ASEC</h1>
+                <h1 class="text-center thin">CHÀO MỪNG TỚI TRUNG TÂM NGOẠI NGỮ <strong class="red">ASEC</strong></h1>
                 <div class="row">
 
                     <!-- Start Service Icon 1 -->
 
                     <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
-                        <div class="panel panel-danger">
-                            <div class="panel-body">
-                                <div class="service-icon">
-                                    <img src="images/icon/icon.svg" alt="icon" class="img-responsive" />
-                                </div>
-                                <div class="service-content">
-                                    <h3>Tầm Nhìn</h3>
-                                    <p>Với mong muốn xây dựng một tổ chức đào tạo anh ngữ hàng đầu trong khu vực, ASEC sẽ từng bước hoàn thiện nhằm khơi dậy tiềm năng của mỗi học viên thông qua môi trường học tập năng động, hiện đại và chất lượng dành cho mọi đối tượng.</p>
-                                </div>
-                            </div>
+                        <div class="service-icon">
+                            <img src="images/icon/icon.svg" alt="icon" class="img-responsive" />
                         </div>
-
+                        <div class="service-content">
+                            <h3 class="red title">Tầm Nhìn</h3>
+                            <p>Với mong muốn xây dựng một tổ chức đào tạo anh ngữ hàng đầu trong khu vực, ASEC sẽ từng bước hoàn thiện nhằm khơi dậy tiềm năng của mỗi học viên thông qua môi trường học tập năng động, hiện đại và chất lượng dành cho mọi đối tượng.</p>
+                        </div>
                     </div>
                     <!-- End Service Icon 1 -->
 
                     <!-- Start Service Icon 2 -->
                     <div class="col-md-4 col-sm-6 service-box service-center wow fadeIn">
-                        <div class="panel panel-danger">
-                            <div class="panel-body">
-                                <div class="service-icon">
-                                    <img src="images/icon/icon2.svg" alt="icon" class="img-responsive" />
-                                </div>
-                                <div class="service-content">
-                                    <h3>Sứ Mệnh</h3>
-                                    <p>Giúp thế hệ trẻ Việt Nam vững vàng, tự tin hội nhập vào môi trường Quốc tế là sứ mệnh của chúng tôi.</p>
-                                    <p>Không chỉ là sự thành thạo, lưu loát trong việc sử dụng ngôn ngữ như người bản xứ, mà học viên còn được bổ trợ những kiến thức, kỹ năng mềm giúp hòa nhập nhanh với môi trường quốc tế.</p>
-                                </div>
-                            </div>
+                        <div class="service-icon">
+                            <img src="images/icon/icon2.svg" alt="icon" class="img-responsive" />
                         </div>
-
+                        <div class="service-content">
+                            <h3 class="red title">Sứ Mệnh</h3>
+                            <p>Giúp thế hệ trẻ Việt Nam vững vàng, tự tin hội nhập vào môi trường Quốc tế là sứ mệnh của chúng tôi.</p>
+                            <p>Không chỉ là sự thành thạo, lưu loát trong việc sử dụng ngôn ngữ như người bản xứ, mà học viên còn được bổ trợ những kiến thức, kỹ năng mềm giúp hòa nhập nhanh với môi trường quốc tế.</p>
+                        </div>
                     </div>
                     <!-- End Service Icon 2 -->
 
                     <!-- Start Service Icon 3 -->
                     <div class="col-md-4 col-sm-6 service-box service-center wow fadeIn">
-                        <div class="panel panel-danger">
-                            <div class="panel-body">
-                                <div class="service-icon">
-                                    <img src="images/icon/icon3.svg" alt="icon" class="img-responsive" />
-                                </div>
-                                <div class="service-content">
-                                    <h3>Giá Trị Cốt Lõi</h3>
-                                    <p>Giá trị cốt lõi mà chúng tôi hướng đến là <strong>Con Người</strong>, xem đây là nhân tố tiên quyết, quan trọng nhất. Chúng tôi đề cao:</p>
-                                    <p>- Chữ "Tâm" trong nghề, sự tận tâm trong từng công việc.</p>
-                                    <p>- Sự uy tín với khách hàng.</p>
-                                    <p>- Lòng nhiệt huyết, nỗ lực vươn đến sự hoàn thiện.</p>
-                                </div>
-                            </div>
+
+                        <div class="service-icon">
+                            <img src="images/icon/icon3.svg" alt="icon" class="img-responsive" />
+                        </div>
+                        <div class="service-content">
+                            <h3 class="red title">Giá Trị Cốt Lõi</h3>
+                            <p>Giá trị cốt lõi mà chúng tôi hướng đến là <strong>Con Người</strong>, xem đây là nhân tố tiên quyết, quan trọng nhất. Chúng tôi đề cao:</p>
+                            <p>- Chữ "Tâm" trong nghề, sự tận tâm trong từng công việc.</p>
+                            <p>- Sự uy tín với khách hàng.</p>
+                            <p>- Lòng nhiệt huyết, nỗ lực vươn đến sự hoàn thiện.</p>
                         </div>
 
                     </div>
@@ -166,26 +153,24 @@
                 <div class="section-video-content text-center">
 
                     <!-- Start Animations Text -->
-                    <h1 class="fittext wite-text uppercase tlt">ASEC là nơi 
+                    <h1 class="fittext wite-text uppercase tlt">
                         <span class="texts">
                             <span>Hiện đại</span>
                             <span>Chuyên nghiệp</span>
                             <span>Tuyệt vời</span>
-                        </span>dành cho<br />
-                        Giáo Dục & Phát triển
+                        </span>là mục tiêu của ASEC
                     </h1>
                     <!-- End Animations Text -->
 
 
                     <!-- Start Buttons -->
-                    <a href="#" class="btn-system btn-large"><i class="fa fa-tasks"></i>&nbsp;Đăng Ký Học Miễn Phí</a>
-                    <%--<a href="#" class="btn-system btn-large btn-wite"><i class="fa fa-download"></i>Purchase This Now</a>--%>
+                    <a href="#" class="btn-system btn-large"><i class="fa fa-graduation-cap"></i>&nbsp;Đăng Ký Học Miễn Phí</a>
                 </div>
                 <!-- End Section Content -->
 
             </div>
-            <!-- .container -->
         </div>
+        <br />
         <!-- End Lớp Học Đang Hot -->
 
 
@@ -242,74 +227,133 @@
 
 
         </div>--%>
-
-        <div id="Welcome">
+        <section class="chuongtrinhhoc">
             <div class="container">
-                <h1 class="title">WELCOME TO INVENT</h1>
-                <%-- Tab Slider --%>
-                <div id="myWelcome" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ul class="nav nav-pills">
-                        <li data-target="#myWelcome" data-slide-to="0" class="active"><a href="#">01 About</a></li>
-                        <li data-target="#myWelcome" data-slide-to="1"><a href="#">02 Academics</a></li>
-                        <li data-target="#myWelcome" data-slide-to="2"><a href="#">03 Admissions & Aid</a></li>
-                        <li data-target="#myWelcome" data-slide-to="3"><a href="#">04 After Invent</a></li>
-                    </ul>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h1 class="text-center thin">Chương Trình Học Tại <strong class="red">ASEC</strong></h1>
+                        <div class="board">
+                            <div class="board-inner">
+                                <ul class="nav nav-tabs" id="myTab">
+                                    <div class="liner"></div>
+                                    <li class="active">
+                                        <a href="#rule1" title="kid" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                            <span class="round-tabs one">
+                                                <img src="images/icon/kid.png" />
+                                            </span>
+                                        </a>
+                                    </li>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="images/carousel-tab/welcome-1.jpg" class="img-responsive" />
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 carousel-caption content wow fadeIn">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
-                                </div>
+                                    <li>
+                                        <a href="#rule2" title="Junior" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                            <span class="round-tabs two">
+                                                <img src="images/icon/Junior.png" />
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#rule3" title="Teens" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                            <span class="round-tabs three">
+                                                <img src="images/icon/Teens.png" />
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#rule4" title="Adults" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                            <span class="round-tabs four">
+                                                <img src="images/icon/Adults.png" />
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                </ul>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="images/carousel-tab/welcome-2.jpg" class="img-responsive" />
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="rule1">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                            <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
+                                            <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
+                                            <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
+                                            <a href="#" class="btn btn-system">Đọc tiếp...</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                            <div class="image1">
+                                                <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
+                                            </div>
+                                            <div class="image2">
+                                                <img src="images/hinhmau/trung-tam-day-tieng-anh-giao-tiep.png" class="img-responsive" />
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 carousel-caption content">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
+                                <div class="tab-pane fade" id="rule2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                            <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
+                                            <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
+                                            <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
+                                            <a href="#" class="btn btn-system">Đọc tiếp...</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                            <div class="image1">
+                                                <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
+                                            </div>
+                                            <div class="image2">
+                                                <img src="images/hinhmau/trung-tam-day-tieng-anh-giao-tiep.png" class="img-responsive" />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="tab-pane fade" id="rule3">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                            <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
+                                            <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
+                                            <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
+                                            <a href="#" class="btn btn-system">Đọc tiếp...</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                            <div class="image1">
+                                                <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
+                                            </div>
+                                            <div class="image2">
+                                                <img src="images/hinhmau/trung-tam-day-tieng-anh-giao-tiep.png" class="img-responsive" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="rule4">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                            <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
+                                            <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
+                                            <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
+                                            <a href="#" class="btn btn-system">Đọc tiếp...</a>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                            <div class="image1">
+                                                <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
+                                            </div>
+                                            <div class="image2">
+                                                <img src="images/hinhmau/trung-tam-day-tieng-anh-giao-tiep.png" class="img-responsive" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="images/carousel-tab/welcome-3.jpg" class="img-responsive" />
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 carousel-caption content">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12 pic">
-                                    <img src="images/carousel-tab/welcome-4.jpg" class="img-responsive" />
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 carousel-caption content">
-                                    <h2 class="title">Great Career Outcomes</h2>
-                                    <p class="meta">Vut sagittis a, magna ridiculus! Scelerisque parturient! Cum duis nunc in, dignissim, porta porta enim, proin turpis egestas! Mauris dapibus sed integer placerat, scelerisque! Ac enim nascetur rhoncus facilisis phasellus eu sit turpis purus magna auctor nunc facilisis parturient ac tempor, montes etiam tortor rhoncus! In, aliquam. Elementum urna, tincidunt? Nisi ut urna? Arcu, odio facilisis urna magna vel, elementum integer quis nisi nisi scelerisque etiam.</p>
-                                    <a href="#" class="btn btn-info btn-lg">Read More</a>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <br />
+        <br />
         <!-- End Chương trình học -->
 
 
@@ -334,9 +378,10 @@
                                                 <div class="post-type"><i class="fa fa-picture-o"></i></div>
                                             </div>
                                             <h3 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
-                                            <div class="post-content">
-                                                <p><%# Eval("MetaDescription") %> <a class="read-more" href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">Đọc tiếp...</a></p>
+                                            <div class="post-meta">
+                                                <p><%# Eval("MetaDescription") %></p>
                                             </div>
+                                            <div class="post-bottom"><a class="read-more" href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">Đọc tiếp...</a></div>
                                         </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
@@ -349,6 +394,7 @@
                 </div>
             </div>
         </div>
+        <br />
         <!-- End Testimonials Section -->
 
 
@@ -388,9 +434,12 @@
 
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 
-                        <h2 class="classic-title">Nhanh Tay Nhận Quà</h2>
+                        <h2 class="classic-title"><span>Nhanh Tay Nhận Quà</span></h2>
+                        <h2 style="line-height: 150%; font-weight: 500; margin-left: 15%; font-size: 200%;">Hãy gọi cho chúng tôi <strong class="text-danger">086 267 6949</strong><br />
+                            hoặc để chúng tôi <strong class="text-info">gọi lại bạn</strong>
+                        </h2>
                         <img src="images/banner/hoc-thu-min.jpg" alt="banner" class="img-responsive" />
 
                     </div>

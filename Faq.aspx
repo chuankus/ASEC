@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>Hỏi Đáp Nhanh</h2>
+                        <h2 class="title-page">Hỏi Đáp Nhanh</h2>
                     </div>
                     <div class="col-md-6">
                         <ul class="breadcrumbs">

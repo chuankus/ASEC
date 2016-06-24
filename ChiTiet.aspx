@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>Bài Viết</h2>
+                        <h2 class="title-page">Bài Viết</h2>
                     </div>
                     <div class="col-md-6">
                         <ul class="breadcrumbs">
@@ -102,8 +102,8 @@
                                                     <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
                                             </div>
                                             <div class="widget-content">
-                                                <h5><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                <span><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
+                                                <span class="post-date"><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
                                             </div>
                                             <div class="clearfix"></div>
                                         </li>
@@ -145,8 +145,8 @@
                                                     <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
                                             </div>
                                             <div class="widget-content">
-                                                <h5><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                <span><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
+                                                <span class="post-date"><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
                                             </div>
                                             <div class="clearfix"></div>
                                         </li>

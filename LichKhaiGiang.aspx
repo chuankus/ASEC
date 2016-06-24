@@ -9,7 +9,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>Lịch Khai Giảng</h2>
+                        <h2 class="title-page">Lịch Khai Giảng</h2>
                     </div>
                     <div class="col-md-6">
                         <ul class="breadcrumbs">
@@ -46,8 +46,7 @@
                                         <div class="post-type"><i class="fa fa-picture-o"></i></div>
                                         <h2><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h2>
                                         <ul class="post-meta">
-                                            <li>By <a href="#">iThemesLab</a></li>
-                                            <li><%# Eval("DateOfStart","{0: dd/MM/yyyy}") %></li>
+                                            <li>Đăng ngày <%# Eval("DateOfStart","{0: dd/MM/yyyy}") %></li>
                                         </ul>
                                         <p><%# Eval("Descriptions") %></p>
                                         <a class="main-button" href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">Đọc tiếp <i class="fa fa-angle-right"></i></a>
@@ -115,8 +114,8 @@
                                                     <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
                                             </div>
                                             <div class="widget-content">
-                                                <h5><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                <span><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
+                                                <span class="post-date"><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
                                             </div>
                                             <div class="clearfix"></div>
                                         </li>
@@ -158,8 +157,8 @@
                                                     <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
                                             </div>
                                             <div class="widget-content">
-                                                <h5><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                <span><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
+                                                <span class="post-date"><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
                                             </div>
                                             <div class="clearfix"></div>
                                         </li>
