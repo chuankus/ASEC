@@ -91,7 +91,7 @@
         <!-- 2. Start Chào Mừng -->
         <div class="section service">
             <div class="container">
-                <h1 class="text-center thin">CHÀO MỪNG TỚI TRUNG TÂM NGOẠI NGỮ <strong class="red">ASEC</strong></h1>
+                <h1 class="text-center thin">CHÀO MỪNG TỚI TRUNG TÂM ANH NGỮ <strong class="red">ASEC</strong></h1>
                 <div class="row">
 
                     <!-- Start Service Icon 1 -->
@@ -367,7 +367,6 @@
                         <div class="latest-posts">
                             <h2 class="classic-title"><span>TIN TỨC</span></h2>
                             <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="3">
-
 
                                 <asp:Repeater ID="rpTinTuc" runat="server">
                                     <ItemTemplate>

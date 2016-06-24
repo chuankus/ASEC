@@ -481,9 +481,10 @@ header {
         }
 
         .top-bar .contact-details li a {
-            font-size: 12px;
+            font-size: 16px;
             display: block;
             line-height: 32px;
+            color: #ee3733;
         }
 
 ul.social-list {
@@ -500,6 +501,8 @@ ul.social-list {
             -moz-transition: all 0.2s ease-in-out;
             -webkit-transition: all 0.2s ease-in-out;
             -o-transition: all 0.2s ease-in-out;
+            background-color: #507CBE;
+            color: white;
         }
 
             ul.social-list li a:hover {
@@ -614,7 +617,7 @@ ul.social-list {
             font-size: 17px;
             display: block;
             font-weight: 300;
-            padding: 28px 15px 28px 15px;
+            padding: 28px 7px 28px 7px;
             overflow: hidden;
             transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;
@@ -787,7 +790,7 @@ ul.social-list {
     z-index: 20;
     float: right;
     display: none;
-    top: 40px;
+    top: 60px;
 }
 
     .navbar .search-form:before {
@@ -807,7 +810,7 @@ ul.social-list {
         position: absolute;
     }
 
-    .navbar .search-form form input {
+    .navbar .search-form input {
         border: 2px solid #ccc;
         border-radius: 3px;
         -webkit-border-radius: 3px;
@@ -822,6 +825,7 @@ ul.social-list {
         -webkit-box-shadow: none;
         outline: none;
         box-shadow: none;
+        font-size: 13px;
     }
 
     .navbar .search-form form {
@@ -1096,8 +1100,8 @@ ul.breadcrumbs li {
         -o-transition: all 0.2s ease-in-out;
     }
 
-    ul.breadcrumbs li:hover a{
-        color:white !important;
+    ul.breadcrumbs li:hover a {
+        color: white !important;
     }
 
 label {
@@ -1415,6 +1419,14 @@ input[type="submit"] {
         -o-transition: all 0.4s ease-in-out;
     }
 
+.latest-posts-classic .post-meta p {
+    overflow: hidden;
+    height: 100px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
 .latest-posts-classic .read-more {
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -1426,6 +1438,15 @@ input[type="submit"] {
         color: #444;
     }
 
+.post-row {
+    height: 300px;
+    overflow: hidden;
+}
+
+    .post-row a.read-more {
+        margin-left: 55px;
+        font-size: 17px;
+    }
 
 
 /*************** Toggles & Accordion ***************/
@@ -1758,7 +1779,7 @@ input[type="submit"] {
 
 .btn-system {
     display: inline-block;
-    color: #fff;
+    color: white !important;
     margin-right: 5px;
     font-weight: 300;
     border-radius: 3px;
@@ -3772,9 +3793,8 @@ ul.post-meta {
 }
 
 .post-bottom {
-    padding: 20px 0;
+    padding:10px 0 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #f6f6f6;
 }
 
 .post-tags-list {
@@ -3989,8 +4009,10 @@ ul.post-meta {
     margin-bottom: 30px;
 }
 
-    .sidebar a {
+    .sidebar .widget a {
         color: #666;
+        font-size: 16px;
+        font-weight: 400;
     }
 
     .sidebar .widget {
@@ -4039,16 +4061,16 @@ ul.post-meta {
         background-color: #444;
     }
 
-.sidebar .widget h4 {
+.sidebar .widget .sidebar-title {
     text-transform: uppercase;
     padding-bottom: 8px;
     margin-bottom: 16px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     position: relative;
 }
 
-    .sidebar .widget h4 .head-line {
+    .sidebar .widget .sidebar-title .head-line {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -4114,16 +4136,17 @@ ul.post-meta {
         opacity: 0.7;
     }
 
-.sidebar .widget-popular-posts .widget-content h5 {
+.sidebar .widget .widget-content .post-title {
     font-size: 13px;
     line-height: 19px;
     margin-bottom: 5px;
     font-weight: 300;
+    text-transform: capitalize;
 }
 
-.sidebar .widget-popular-posts .widget-content span {
-    color: #bbb;
-    font-size: 12px;
+.sidebar .widget .widget-content .post-date {
+    color: #FF5722;
+    font-size: 16px;
 }
 
 .sidebar .tagcloud a {
@@ -5947,7 +5970,24 @@ ul.footer-nav {
     text-align: right;
 }
 
-
 .navbar-collapse {
     max-height: 340px;
+}
+
+
+/*************** Posts ***************/
+.post-title a {
+    color: black;
+    line-height: 30px;
+}
+
+    .post-title a:hover {
+        transition: all 0.3s linear;
+        color: #ee3733;
+    }
+
+.post-date {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #FF5722;
 }

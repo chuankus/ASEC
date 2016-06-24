@@ -57,6 +57,9 @@ public partial class TinTuc : System.Web.UI.Page
         str = str.Replace(";", "-");
         str = str.Replace(":", "-");
         str = str.Replace("%", "");
+        str = str.Replace("/", "-");
+        str = str.Replace("(", "-");
+        str = str.Replace(")", "-");
         Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
         string temp = str.Normalize(NormalizationForm.FormD);
         title_url = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');

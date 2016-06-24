@@ -92,7 +92,7 @@
                     <div class="container">
                         <div class="navbar-header">
                             <!-- Stat Toggle Nav Link For Mobiles -->
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                                 <i class="fa fa-bars"></i>
                             </button>
                             <!-- End Toggle Nav Link For Mobiles -->
@@ -100,7 +100,7 @@
                                 <img alt="logo" src="images/logo.png" class="img-responsive logo" />
                             </a>
                         </div>
-                        <div class="navbar-collapse collapse">
+                        <div class="collapse navbar-collapse">
                             <!-- Stat Search -->
                             <div class="search-side">
                                 <a class="show-search"><i class="fa fa-search"></i></a>
@@ -136,24 +136,24 @@
 
                     <!-- Mobile Menu Start -->
                     <ul class="wpb-mobile-menu">
-                        <%-- Start Mobile Menu --%>
+                        <!-- Start Mobile Menu -->
                         <asp:Repeater ID="rpMobileMenu" runat="server">
                             <ItemTemplate>
                                 <li>
                                     <a href="<%# Eval("Permalink") %>"><%# Eval("ItemName") %></a>
                                     <ul class="dropdown">
-                                        <%-- Start Sub Mobile Menu --%>
+                                        <!-- Start Sub Mobile Menu -->
                                         <asp:Repeater ID="rpMoblieSubMenu" runat="server" DataSource='<%# SubMenu(Eval("MenuID").ToString()) %>'>
                                             <ItemTemplate>
                                                 <li><a href="/<%# Eval("linkMenuCon") %>"><%# Eval("CategoryName") %></a></li>
                                             </ItemTemplate>
                                         </asp:Repeater>
-                                        <%-- End Sub Mobile Menu --%>
+                                        <!-- End Sub Mobile Menu -->
                                     </ul>
                                 </li>
                             </ItemTemplate>
                         </asp:Repeater>
-                        <%-- End Mobile Menu --%>
+                        <!-- End Mobile Menu -->
                     </ul>
                     <!-- Mobile Menu End -->
 
@@ -311,11 +311,11 @@
             new WOW().init();
 
             if ($(window).innerWidth() < 992) {
-                $(window).scroll(function () {
-                    if ($(window).scrollTop() >= 0) {
-                        $(".navbar-top").add("<br />");
-                    }
-                });
+                //$(window).scroll(function () {
+                //    if ($(window).scrollTop() >= 0) {
+                //        $(".navbar-top").add("<br />");
+                //    }
+                //});
                 $(".logo").css("margin-top", "-18%");
             }
 

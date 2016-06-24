@@ -39,9 +39,7 @@
                                     <div class="post-content">
                                         <div class="post-type"><i class="fa fa-picture-o"></i></div>
                                         <h2><%# Eval("PostTitle") %></h2>
-                                        <ul class="post-meta">
-                                            <li>Đăng vào ngày<%# Eval("DateOfCreate","{0: dd/MM/yyyy}") %></li>
-                                        </ul>
+                                        <p class="post-date">Đăng vào ngày<%# Eval("DateOfCreate","{0: dd/MM/yyyy}") %></p>
                                         <p><%# Eval("PostContentVN") %></p>
 
                                         <div class="post-bottom clearfix">
@@ -69,16 +67,16 @@
 
                         <!-- Video Widget -->
                         <div class="widget">
-                            <h4>Video <span class="head-line"></span></h4>
+                            <h4 class="sidebar-title">Video <span class="head-line"></span></h4>
                             <div class="embed-responsive embed-responsive-4by3">
-                                <iframe src="https://www.youtube.com/embed/WyuOMffxBA4" frameborder="0" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/W7QYqI2im-Y" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
 
 
                         <!-- Chuyên Mục -->
                         <div class="widget widget-categories">
-                            <h4>Chuyên Mục <span class="head-line"></span></h4>
+                            <h4 class="sidebar-title">Chuyên Mục <span class="head-line"></span></h4>
                             <ul>
                                 <asp:Repeater ID="rpChuyenMuc" runat="server">
                                     <ItemTemplate>
@@ -92,31 +90,35 @@
 
                         <!-- Posts xem nhiều nhất -->
                         <div class="widget widget-popular-posts">
-                            <h4>Bài Viết Xem Nhiều <span class="head-line"></span></h4>
+                            <h4 class="sidebar-title">Bài Viết Xem Nhiều <span class="head-line"></span></h4>
                             <ul>
                                 <asp:Repeater ID="rpTinXemNhieu" runat="server">
                                     <ItemTemplate>
                                         <li>
-                                            <div class="widget-thumb">
-                                                <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">
-                                                    <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
-                                            </div>
-                                            <div class="widget-content">
-                                                <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                <span class="post-date"><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                            <div class="media">
+                                                <div class="widget-thumb media-left">
+                                                    <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">
+                                                        <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive media-object" /></a>
+                                                </div>
+                                                <div class="widget-content media-body">
+                                                    <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
+                                                    <span class="post-date">Đăng ngày <%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                </div>
                                             </div>
                                             <div class="clearfix"></div>
                                         </li>
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </ul>
+                            <br />
+                            <a href="#" class="btn btn-system">Xem thêm...</a>
                         </div>
                         <!-- End Posts xem nhiều nhất -->
 
 
                         <!-- Tags Widget -->
                         <div class="widget widget-tags">
-                            <h4>Tags <span class="head-line"></span></h4>
+                            <h4 class="sidebar-title">Tags <span class="head-line"></span></h4>
                             <div class="tagcloud">
                                 <a href="#">Portfolio</a>
                                 <a href="#">Theme</a>
@@ -135,24 +137,28 @@
 
                         <!-- Posts tin tức -->
                         <div class="widget widget-popular-posts">
-                            <h4>Tin Tức <span class="head-line"></span></h4>
+                            <h4 class="sidebar-title">Tin Tức <span class="head-line"></span></h4>
                             <ul>
                                 <asp:Repeater ID="rpTinTuc" runat="server">
                                     <ItemTemplate>
                                         <li>
-                                            <div class="widget-thumb">
-                                                <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">
-                                                    <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
-                                            </div>
-                                            <div class="widget-content">
-                                                <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                <span class="post-date"><%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                            <div class="media">
+                                                <div class="widget-thumb media-left">
+                                                    <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">
+                                                        <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
+                                                </div>
+                                                <div class="widget-content media-body">
+                                                    <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
+                                                    <span class="post-date">Đăng ngày <%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                </div>
                                             </div>
                                             <div class="clearfix"></div>
                                         </li>
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </ul>
+                            <br />
+                            <a href="TinTuc.aspx" class="btn btn-system">Xem thêm...</a>
                         </div>
                         <!-- End Posts tin tức -->
 

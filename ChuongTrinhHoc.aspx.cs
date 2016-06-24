@@ -27,7 +27,7 @@ public partial class ChuongTrinhHoc : System.Web.UI.Page
     //Main Column - Posts of Chương Trình Học CTH
     private void PostsOfCTH()
     {
-        pager1.PageSize = 3;
+        pager1.PageSize = 6;
         pager1.DataSource = _post.AllChuongTrinhHoc().DefaultView;
         pager1.BindToControl = rpChuongTrinhHoc;
 
@@ -65,6 +65,9 @@ public partial class ChuongTrinhHoc : System.Web.UI.Page
         str = str.Replace(";", "-");
         str = str.Replace(":", "-");
         str = str.Replace("%", "");
+        str = str.Replace("/", "-");
+        str = str.Replace("(", "-");
+        str = str.Replace(")", "-");
         Regex regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
         string temp = str.Normalize(NormalizationForm.FormD);
         title_url = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
