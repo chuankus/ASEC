@@ -6,13 +6,13 @@
         <div class="page-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <h2 class="title-page">Bài Viết</h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul class="breadcrumbs">
                             <li><a href="Default2.aspx">Trang Chủ</a></li>
-                            <li><a href="#">Chương Trình Học</a></li>
+                            <li><a href="<%=UrlBreadcrumb %>"><%=Breadcrumb %></a></li>
                             <li>Bài Viết</li>
                         </ul>
                     </div>

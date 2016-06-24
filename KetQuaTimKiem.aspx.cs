@@ -1,40 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Data;
 
-public partial class ChiTietBaiViet : System.Web.UI.Page
+public partial class KetQuaTimKiem : System.Web.UI.Page
 {
     private BLL_Post _post = new BLL_Post();
     private BLL_Category _category = new BLL_Category();
     public string HomeUrl = "http://inside.kus.edu.vn/";
-    public string CurrentUrl = "";
-    public string Breadcrumb = "";
-    public string UrlBreadcrumb = "";
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
         {
-            PostDetail();
+            KQTK();
             ChuyenMuc();
             TinXemNhieu();
             TinTuc();
-            CurrentUrl = Request.Url.AbsoluteUri;
-            BreadcrumbPage();
         }
     }
 
-    //Main Column - Detail post
-    private void PostDetail()
+    //Main Column - Posts of Chương Trình Học CTH
+    private void KQTK()
     {
-        int postid = Convert.ToInt32(RouteData.Values["id"].ToString());
-        rpDetailPost.DataSource = _post.PostDetail(postid);
-        rpDetailPost.DataBind();
+        string kw = Request.QueryString["keyword"];
+
+        pager1.PageSize = 6;
+        pager1.DataSource = _post.TimKiemFTS(kw).DefaultView;
+        pager1.BindToControl = rpKetQuaTimKiem;
+        rpKetQuaTimKiem.DataSource = pager1.DataSourcePaged;
     }
 
     //Right Column - Chuyên mục
@@ -75,17 +72,5 @@ public partial class ChiTietBaiViet : System.Web.UI.Page
         string temp = str.Normalize(NormalizationForm.FormD);
         title_url = regex.Replace(temp, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D');
         return title_url;
-    }
-
-    //
-    private void BreadcrumbPage()
-    {
-        int postid = Convert.ToInt32(RouteData.Values["id"].ToString());
-        DataTable result = _category.GetCategoryfromPostID(postid);
-        foreach (DataRow item in result.Rows)
-        {
-            Breadcrumb = item[1].ToString();
-            UrlBreadcrumb = item[2].ToString();
-        }
     }
 }

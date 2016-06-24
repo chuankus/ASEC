@@ -9,8 +9,10 @@ using System.Data;
 public partial class Albums : System.Web.UI.Page
 {
     private BLL_HinhAnh _hinhanh = new BLL_HinhAnh();
+    private BLL_Category _category = new BLL_Category();
     public string HomeUrl = "http://inside.kus.edu.vn/";
-    public string EventName = "";
+    public string breadcrumb = "";
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!Page.IsPostBack)
@@ -31,5 +33,10 @@ public partial class Albums : System.Web.UI.Page
     {
         DataTable album = _hinhanh.AlbumFunday(imagetypeid);
         return album;
+    }
+
+    private void CategoryBreadcrumb()
+    {
+        
     }
 }

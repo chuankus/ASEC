@@ -1,20 +1,20 @@
-﻿<%@ Page Title="Chương Trình Học | Trung Tâm Ngoại Ngữ Chân Trời Mới" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ChuongTrinhHoc.aspx.cs" Inherits="ChuongTrinhHoc" %>
+﻿<%@ Page Title="Tuyển Dụng | Trung Tâm Ngoại Ngữ Chân Trời Mới" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="KetQuaTimKiem.aspx.cs" Inherits="KetQuaTimKiem" %>
 
 <%@ Register TagPrefix="phantrang" Namespace="SiteUtils" Assembly="CollectionPager" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="ChuongTrinhHoc">
+    <div id="KetQuaTimKiem">
         <!-- Start Page Banner -->
         <div class="page-banner">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <h2 class="title-page">Chương Trình Học</h2>
+                        <h2 class="title-page">Kết Quả Tìm Kiếm</h2>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul class="breadcrumbs">
                             <li><a href="Default2.aspx">Trang Chủ</a></li>
-                            <li>Chương Trình Học</li>
+                            <li>Kết Quả Tìm Kiếm</li>
                         </ul>
                     </div>
                 </div>
@@ -22,17 +22,14 @@
         </div>
         <!-- End Page Banner -->
 
-
-        <!-- Start Content -->
+        <!-- Content -->
         <div id="content">
             <div class="container">
                 <div class="row">
-
-                    <!-- Start Blog Posts -->
+                    <!-- Start Kết Quả Tìm Kiếm -->
                     <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
 
-                        <%-- Start Chương Trình Học --%>
-                        <asp:Repeater ID="rpChuongTrinhHoc" runat="server">
+                        <asp:Repeater ID="rpKetQuaTimKiem" runat="server">
                             <ItemTemplate>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -50,23 +47,21 @@
                                 <br />
                             </ItemTemplate>
                         </asp:Repeater>
-                        <%-- End Chương Trình Học --%>
-
 
                         <!-- Start Pagination -->
                         <div class="pager">
-                            <phantrang:CollectionPager ID="pager1"
-                                FirstText="First"
-                                BackText="«"
-                                LabelText=""
-                                LastText="Last"
-                                NextText="»"
-                                ShowFirstLast="True"
-                                SliderSize="5" PagingMode="QueryString"
-                                runat="server" BackNextLinkSeparator="" BackNextLocation="Split"
-                                PageNumbersDisplay="Numbers" ResultsLocation="None"
-                                BackNextDisplay="Buttons" QueryStringKey="page">
-                            </phantrang:CollectionPager>
+                            <phantrang:collectionpager id="pager1"
+                                firsttext="First"
+                                backtext="«"
+                                labeltext=""
+                                lasttext="Last"
+                                nexttext="»"
+                                showfirstlast="True"
+                                slidersize="5" pagingmode="QueryString"
+                                runat="server" backnextlinkseparator="" backnextlocation="Split"
+                                pagenumbersdisplay="Numbers" resultslocation="None"
+                                backnextdisplay="Buttons" querystringkey="page">
+                            </phantrang:collectionpager>
                         </div>
                         <!-- End Pagination -->
 
@@ -176,11 +171,10 @@
 
                     </div>
                     <!--End sidebar-->
-
-
                 </div>
             </div>
         </div>
         <!-- End Content -->
     </div>
 </asp:Content>
+

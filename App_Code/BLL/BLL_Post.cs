@@ -107,6 +107,18 @@ public class BLL_Post
         return result;
     }
 
+    //All of post viewest
+    public DataTable ListPostViewest()
+    {
+        this.OpenConnect();
+
+        string query = "select p.PostID, p.PostTitle, p.MetaDescription, p.DateOfCreate, img.ImagesUrl, img.ImagesName from POST p join Images img on p.PostImage = img.ImagesID order by ViewCount desc";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
     //Post of News - trang chủ
     public DataTable TopNews(int top)
     {
@@ -175,6 +187,18 @@ public class BLL_Post
             this.OpenConnect();
 
         string query = "select * from POST p join Post_Category_relationships p_ct on p_ct.PostID = p.PostID join Category ct on ct.CategoryID = p_ct.CategoryID join Images img on p.PostImage = img.ImagesID where ct.CategoryName like N'Lịch Khai Giảng' order by p.DateOfCreate desc";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Tìm kiếm Full Text Search
+    public DataTable TimKiemFTS(string keyword)
+    {
+        this.OpenConnect();
+
+        string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where FREETEXT((PostTitle), '" + keyword + "')";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

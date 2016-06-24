@@ -8,10 +8,10 @@
         <div class="page-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <h2 class="title-page">Tin Tức</h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul class="breadcrumbs">
                             <li><a href="Default2.aspx">Trang Chủ</a></li>
                             <li><a href="#">Chuyên Mục</a></li>
@@ -30,7 +30,7 @@
                 <div class="row">
 
                     <!-- Start Blog Posts -->
-                    <div class="col-md-9">
+                    <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
 
                         <%-- Start Chương Trình Học --%>
                         <asp:Repeater ID="rpTinTuc" runat="server">
@@ -75,7 +75,7 @@
 
 
                     <!--Sidebar-->
-                    <div class="col-md-3 sidebar right-sidebar">
+                    <div class="hidden-xs col-sm-6 col-md-3 col-lg-3 sidebar right-sidebar">
 
                         <!-- Video Widget -->
                         <div class="widget">
@@ -123,7 +123,7 @@
                                 </asp:Repeater>
                             </ul>
                             <br />
-                            <a href="#" class="btn btn-system">Xem thêm...</a>
+                            <a href="TinXemNhieu.aspx" class="btn btn-system">Xem thêm...</a>
                         </div>
                         <!-- End Posts xem nhiều nhất -->
 

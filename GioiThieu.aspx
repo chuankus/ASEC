@@ -6,10 +6,10 @@
         <div class="page-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <h2 class="title-page">Giới Thiệu</h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul class="breadcrumbs">
                             <li><a href="Default2.aspx">Trang Chủ</a></li>
                             <li class="active">Giới Thiệu</li>
@@ -25,11 +25,9 @@
         <div id="content">
             <div class="container">
                 <div class="page-content">
-
-
                     <div class="row">
 
-                        <div class="col-md-7">
+                        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
 
                             <!-- Classic Heading -->
                             <h2 class="classic-title"><span>Vài nét về Trung tâm Chân Trời Mới</span></h2>
@@ -41,7 +39,7 @@
                             <p>Đến với ASEC là các bạn đã đến với một môi trường học tập thoải mái, gần gũi nhưng cũng không kém phần chuyên nghiệp. Chúng tôi luôn mong muốn không chỉ đem lại sự tự tin cho học viên trên con đường chinh phục ngôn ngữ mà còn tạo những nền tảng vững chắc cho những thành công của các bạn trong cuộc sống.</p>
                         </div>
 
-                        <div class="col-md-5">
+                        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
 
                             <!-- Start Touch Slider -->
                             <div class="touch-slider" data-slider-navigation="true" data-slider-pagination="true">

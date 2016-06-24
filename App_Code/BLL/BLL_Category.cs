@@ -32,7 +32,7 @@ public class BLL_Category
     {
         this.OpenConnect();
 
-        string query = "select * from Post_Category_relationships p_ct join Category ct on p_ct.CategoryID = ct.CategoryID join POST p on p_ct.PostID = p.PostID where p.PostID = " + postid;
+        string query = "select ct.CategoryID, ct.CategoryName, ct.Permalink from Post_Category_relationships p_ct join Category ct on p_ct.CategoryID = ct.CategoryID join POST p on p_ct.PostID = p.PostID where p.PostID = " + postid;
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

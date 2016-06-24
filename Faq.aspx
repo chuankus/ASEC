@@ -6,10 +6,10 @@
         <div class="page-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <h2 class="title-page">Hỏi Đáp Nhanh</h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul class="breadcrumbs">
                             <li><a href="Default2.aspx">Trang Chủ</a></li>
                             <li><a href="#">Chuyên Mục</a></li>
@@ -177,8 +177,9 @@
                         <!-- End Accordion -->
                     </div>
                 </div>
+                <br />
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                         <!-- Classic Heading -->
                         <h2 class="classic-title"><span>GỬI CÂU HỎI KHÁC</span></h2>
 

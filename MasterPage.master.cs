@@ -34,4 +34,24 @@ public partial class MasterPage : System.Web.UI.MasterPage
         DataTable MenuCon = this._menu.Get_Sub_Menu(idMenu);
         return MenuCon;
     }
+
+    //protected void btnTimKiem_Click(object sender, EventArgs e)
+    //{
+    //    string keyword = txtTimKiem.Value;
+
+    //    if (keyword == "")
+    //        Response.Redirect("Default.aspx");
+    //    else
+    //        Response.Redirect("KetQuaTimKiem.aspx?keyword= " + keyword);
+    //}
+
+    protected void txtTimKiem_TextChanged(object sender, EventArgs e)
+    {
+        string keyword = txtTimKiem.Text;
+
+        if (keyword == "")
+            Response.Redirect("Default.aspx");
+        else
+            Response.Redirect("KetQuaTimKiem.aspx?keyword= " + keyword);
+    }
 }

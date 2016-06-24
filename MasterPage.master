@@ -105,8 +105,9 @@
                             <div class="search-side">
                                 <a class="show-search"><i class="fa fa-search"></i></a>
                                 <div class="search-form">
-                                    <input type="text" value="" name="s" id="s" placeholder="Tìm kiếm..." />
+                                    <asp:TextBox ID="txtTimKiem" runat="server" OnTextChanged="txtTimKiem_TextChanged"></asp:TextBox>
                                 </div>
+                                <!-- /input-group -->
                             </div>
                             <!-- End Search -->
                             <!-- Start Navigation List -->
@@ -249,7 +250,9 @@
                             <div class="footer-widget contact-widget">
                                 <h4 class="title">THÔNG TIN LIÊN HỆ<span class="head-line"></span></h4>
                                 <ul>
-                                    <li><h1 class="trungtam">Trung Tâm Ngoại Ngữ ASEC</h1></li>
+                                    <li>
+                                        <h1 class="trungtam">Trung Tâm Ngoại Ngữ ASEC</h1>
+                                    </li>
                                     <li><span>Điện thoại:</span> 086 267 6949</li>
                                     <li><span>Email:</span> info@americantop.edu.vn</li>
                                     <li><span>Website:</span> <a href="asec.edu.vn" style="color: white">www.asec.edu.vn</a></li>
