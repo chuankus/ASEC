@@ -100,7 +100,7 @@ public class BLL_Post
     {
         this.OpenConnect();
 
-        string query = "select top " + top + " p.PostID, p.PostTitle, p.DateOfCreate, img.ImagesUrl, img.ImagesName from POST p join Images img on p.PostImage = img.ImagesID order by ViewCount desc";
+        string query = "select top " + top + " p.PostID, p.PostTitle, p.DateOfCreate, img.ImagesUrl, img.ImagesName, p.ViewCount from POST p join Images img on p.PostImage = img.ImagesID order by ViewCount desc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
@@ -112,7 +112,7 @@ public class BLL_Post
     {
         this.OpenConnect();
 
-        string query = "select p.PostID, p.PostTitle, p.MetaDescription, p.DateOfCreate, img.ImagesUrl, img.ImagesName from POST p join Images img on p.PostImage = img.ImagesID order by ViewCount desc";
+        string query = "select p.PostID, p.PostTitle, p.MetaDescription, p.DateOfCreate, img.ImagesUrl, img.ImagesName, p.ViewCount from POST p join Images img on p.PostImage = img.ImagesID order by ViewCount desc";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
@@ -167,6 +167,18 @@ public class BLL_Post
         return result;
     }
 
+    //Bài viết mới nhất footer
+    public DataTable TopMoiNhat(int top)
+    {
+        this.OpenConnect();
+
+        string query = "select top " + top + " * from Post_Category_relationships p_ct join Category ct on p_ct.CategoryID = ct.CategoryID join POST p on p_ct.PostID = p.PostID join Images img on p.PostImage = img.ImagesID where ct.CategoryName not like N'Tin Tức' order by p.DateOfCreate desc";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
     //Bài viết cùng chủ đề
     public DataTable PostCungChuDe(string idPost)
     {
@@ -198,7 +210,8 @@ public class BLL_Post
     {
         this.OpenConnect();
 
-        string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where FREETEXT((PostTitle), '" + keyword + "')";
+        //string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where FREETEXT((PostTitle), '" + keyword + "')";
+        string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where p.PostTitle like N'%" + keyword + "%'";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

@@ -52,7 +52,7 @@
                         <h2 class="classic-title"><span>Thông Tin</span></h2>
 
                         <!-- Some Info -->
-                        <h1 style="color:#ee3733">Trung Tâm Ngoại Ngữ ASEC</h1>
+                        <h2 class="red">Trung Tâm Ngoại Ngữ ASEC</h2>
 
                         <!-- Divider -->
                         <div class="hr1" style="margin-bottom: 10px;"></div>

@@ -1,4 +1,4 @@
-/* CSS Document */
+﻿/* CSS Document */
 
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
@@ -16,9 +16,6 @@
 /*   11 - Sidebar Styles           */
 /*   12 - Footer Styles 		   */
 /*   13 - Plugins Styles 	  	   */
-
-
-
 
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
@@ -1984,11 +1981,13 @@ ul.icons-list {
 
     ul.icons-list li, ul.list-unstyled li {
         margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
         ul.icons-list li i {
-            font-size: 14px;
             margin-right: 4px;
+            font-size: 20px;
         }
 
 
@@ -3793,7 +3792,7 @@ ul.post-meta {
 }
 
 .post-bottom {
-    padding:10px 0 20px;
+    padding: 10px 0 20px;
     margin-bottom: 20px;
 }
 
@@ -5991,3 +5990,566 @@ ul.footer-nav {
     margin: 8px 0;
     color: #FF5722;
 }
+
+
+/*****************Custom.css*******************/
+/* start logo */
+.logo {
+    width: 100%;
+    /*height: auto;*/
+    height: auto;
+    margin-top: -8%;
+}
+
+.navbar-default .navbar-collapse {
+    height: 140px;
+}
+
+    .navbar-default .navbar-collapse ul.navbar-nav {
+        padding-top: 2%;
+    }
+
+    .navbar-default .navbar-collapse div.search-side {
+        padding-top: 2%;
+    }
+/* end logo */
+/*start service */
+.service .service-content p {
+    text-align: justify;
+}
+/*end service */
+/*start google map*/
+#map .embed-responsive {
+    height: 350px;
+}
+
+    #map .embed-responsive iframe {
+        height: 350px;
+    }
+/*end google map*/
+/*start input search*/
+.search-form input {
+    font-size: 13px;
+}
+/*end input search*/
+/*phan trang*/
+.pager input {
+    color: #fff;
+    background-color: #ee3733;
+    border-color: #d43f3a;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 10px 13px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+    .pager input:hover {
+        background-color: #666;
+        transition: all 0.2s linear;
+    }
+
+.pager span a {
+    margin: 0 5px;
+    font-size: 20px;
+}
+/*end phan trang*/
+/*slide gioi thieu*/
+.touch-slider .item img {
+    width: 100%;
+    height: auto;
+}
+/*end slide gioi thieu*/
+/* footer middle column */
+.twitter-widget .media .media-heading a {
+    color: white;
+}
+
+.twitter-widget .media a img {
+    width: 65px;
+    height: 65px;
+}
+
+.twitter-widget .media span {
+    color: white;
+}
+/* end footer middle column */
+/* .bg-primary, .bg-info, .bg-success, .bg-warning, .bg-danger */
+.bg-info,
+.bg-success,
+.bg-warning,
+.bg-danger,
+.bg-primary {
+    padding: 10px;
+}
+/* end .bg-primary, .bg-info, .bg-success, .bg-warning, .bg-danger */
+/*slider trang chu*/
+.carousel-inner .item img {
+    width: 100%;
+    height: auto;
+}
+/*end slider trang chu*/
+/*album */
+.portfolio-thumb img {
+    width: 256px;
+    height: 176px;
+}
+/*end album */
+.service-center .service-icon {
+    margin-bottom: 14px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.service-center .panel {
+    height: 500px;
+}
+
+    .service-center .panel .service-content p {
+        font-size: 18px;
+    }
+/*circular bootstrap chương trình học*/
+.chuongtrinhhoc {
+    margin-top: 40px;
+}
+
+    .chuongtrinhhoc .board {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        background: #fff;
+        /*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+    }
+
+        .chuongtrinhhoc .board .nav-tabs {
+            position: relative;
+            /* border-bottom: 0; */
+            /* width: 80%; */
+            margin: 40px auto;
+            margin-bottom: 0;
+            box-sizing: border-box;
+        }
+
+        .chuongtrinhhoc .board > div.board-inner {
+            background-size: 30%;
+        }
+
+    .chuongtrinhhoc p.narrow {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .chuongtrinhhoc .liner {
+        height: 5px;
+        background: #ff6633;
+        position: absolute;
+        width: 80%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .chuongtrinhhoc .nav-tabs > li.active > a,
+    .chuongtrinhhoc .nav-tabs > li.active > a:hover,
+    .chuongtrinhhoc .nav-tabs > li.active > a:focus {
+        color: #555555;
+        cursor: default;
+        /* background-color: #ffffff; */
+        border: 0;
+        border-bottom-color: transparent;
+    }
+
+    .chuongtrinhhoc span.round-tabs {
+        width: 200px;
+        height: 200px;
+        line-height: 70px;
+        display: inline-block;
+        border-radius: 100px;
+        background: white;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        font-size: 25px;
+    }
+
+        .chuongtrinhhoc span.round-tabs.one {
+            color: #22c222;
+        }
+
+    .chuongtrinhhoc li.active span.round-tabs.one {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #22c222;
+    }
+
+    .chuongtrinhhoc span.round-tabs.two {
+        color: #febe29;
+    }
+
+    .chuongtrinhhoc li.active span.round-tabs.two {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #febe29;
+    }
+
+    .chuongtrinhhoc span.round-tabs.three {
+        color: #3e5e9a;
+    }
+
+    .chuongtrinhhoc li.active span.round-tabs.three {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #3e5e9a;
+    }
+
+    .chuongtrinhhoc span.round-tabs.four {
+        color: #f1685e;
+    }
+
+    .chuongtrinhhoc li.active span.round-tabs.four {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #f1685e;
+    }
+
+    .chuongtrinhhoc span.round-tabs.five {
+        color: #B94BCA;
+        border: 2px solid #B94BCA;
+    }
+
+    .chuongtrinhhoc li.active span.round-tabs.five {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #B94BCA;
+    }
+
+    .chuongtrinhhoc span.round-tabs.six {
+        color: #4DCDB7;
+        border: 2px solid #4DCDB7;
+    }
+
+    .chuongtrinhhoc li.active span.round-tabs.six {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #4DCDB7;
+    }
+
+    .chuongtrinhhoc span.round-tabs.seven {
+        color: #1AA4FC;
+        border: 2px solid #1AA4FC;
+    }
+
+    .chuongtrinhhoc li.active span.round-tabs.seven {
+        background: #fff !important;
+        border: 2px solid #ddd;
+        color: #1AA4FC;
+    }
+
+    .chuongtrinhhoc .nav-tabs > li.active > a span.round-tabs {
+        background: #fafafa;
+    }
+
+    .chuongtrinhhoc .nav-tabs > li {
+        width: 25%;
+    }
+
+    .chuongtrinhhoc li.active:before {
+        content: " ";
+        position: absolute;
+        left: 45%;
+        opacity: 0;
+        margin: 0 auto;
+        bottom: -2px;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+        z-index: 1;
+        transition: 0.2s ease-in-out;
+    }
+
+    .chuongtrinhhoc li:after {
+        content: " ";
+        position: absolute;
+        left: 45%;
+        opacity: 0;
+        margin: 0 auto;
+        bottom: 0px;
+        border: 5px solid transparent;
+        border-bottom-color: #ddd;
+        transition: 0.1s ease-in-out;
+    }
+
+    .chuongtrinhhoc li.active:after {
+        content: " ";
+        position: absolute;
+        left: 45%;
+        opacity: 1;
+        margin: 0 auto;
+        bottom: 0px;
+        border: 10px solid transparent;
+        border-bottom-color: #ddd;
+    }
+
+    .chuongtrinhhoc .nav-tabs > li a {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        border-radius: 100%;
+        padding: 0;
+    }
+
+        .chuongtrinhhoc .nav-tabs > li a:hover {
+            background: transparent;
+        }
+
+    .chuongtrinhhoc .tab-pane {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .chuongtrinhhoc .tab-content .head {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    .chuongtrinhhoc .btn-outline-rounded {
+        padding: 10px 40px;
+        margin: 20px 0;
+        border: 2px solid transparent;
+        border-radius: 25px;
+    }
+
+    .chuongtrinhhoc .btn.green {
+        background-color: #5cb85c;
+        /*border: 2px solid #5cb85c;*/
+        color: #ffffff;
+    }
+/*end circular bootstrap chương trình học*/
+/*parallax trang chủ*/
+.purchase {
+    background: url(../images/banner/bg7-min.jpg) no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+/*end parallax trang chủ*/
+/*contact form*/
+#contact-form input[type="text"],
+#contact-form textarea {
+    border: 1px solid #d43f3a;
+}
+
+    #contact-form input[type="text"]:focus,
+    #contact-form textarea:focus {
+        border-color: #d43f3a;
+    }
+/*end contact form*/
+/*footer contact-widget*/
+.contact-widget .trungtam {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+/*end footer contact-widget*/
+/*.head-line*/
+.head-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #ee3733;
+    margin: 0;
+}
+/*end .head-line*/
+/*hinh anh xep chong chương trình học*/
+.chuongtrinhhoc .post-title {
+    font-size: 300%;
+    line-height: 120%;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.chuongtrinhhoc .post-meta {
+    font-size: 110%;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.chuongtrinhhoc .post-content {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.chuongtrinhhoc .image1 {
+    margin-left: 30px;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    width: 350px;
+    height: 300px;
+}
+
+    .chuongtrinhhoc .image1 img {
+        width: 100%;
+        height: auto;
+    }
+
+.chuongtrinhhoc .image2 {
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    z-index: 2;
+    width: 350px;
+    height: 300px;
+}
+
+    .chuongtrinhhoc .image2 img {
+        width: 100%;
+        height: auto;
+    }
+/*end hinh anh xep chong chương trình học*/
+/*post-bottom*/
+/*end post-bottom*/
+/*btn chương trình học*/
+.btn-chuongtrinhhoc {
+    z-index: 2;
+}
+/*end btn chương trình học*/
+/*effect hover button*/
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+    .hvr-pulse-grow:hover,
+    .hvr-pulse-grow:focus,
+    .hvr-pulse-grow:active {
+        -webkit-animation-name: hvr-pulse-grow;
+        animation-name: hvr-pulse-grow;
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+    }
+/*effect hover button*/
+/*.red*/
+.red {
+    color: #ee3733;
+}
+/*end .red*/
+/*.thin, .title*/
+.thin {
+    font-weight: 300;
+}
+
+.title {
+    margin-bottom: 2%;
+}
+/*end .thin*/
+/*footet*/
+.footer-widgets {
+    font-size: 16px;
+}
+
+    .footer-widgets .title {
+        color: white;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .footer-widgets .head-line {
+        color: white;
+        background-color: white !important;
+    }
+
+    .footer-widgets span,
+    .footer-widgets li {
+        color: white !important;
+    }
+/*end footer*/
+/*title-page*/
+.title-page {
+    color: white;
+}
+/*end title-page*/
+/*start input search*/
+.search-form input {
+    font-size: 13px;
+}
+/*end input search*/
+/*start service */
+.service .service-content p {
+    text-align: justify;
+}
+/*end service */
+/*media*/
+.media-left,
+.media > .pull-left {
+    padding-right: 0 !important;
+}
+
+.media-body {
+    padding-left: 10px;
+}
+
+.post {
+    padding-left: 0;
+}
+
+.post-meta {
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    height: 80px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+/*end media*/
+/*********************end Custom.css***************/

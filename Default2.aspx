@@ -96,42 +96,42 @@
 
                     <!-- Start Service Icon 1 -->
 
-                    <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
+                    <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
                         <div class="service-icon">
                             <img src="images/icon/icon.svg" alt="icon" class="img-responsive" />
                         </div>
                         <div class="service-content">
-                            <h3 class="red title">Tầm Nhìn</h3>
-                            <p>Với mong muốn xây dựng một tổ chức đào tạo anh ngữ hàng đầu trong khu vực, ASEC sẽ từng bước hoàn thiện nhằm khơi dậy tiềm năng của mỗi học viên thông qua môi trường học tập năng động, hiện đại và chất lượng dành cho mọi đối tượng.</p>
+                            <h3 class="red title" data-animation="fadeIn" data-animation-delay="02">Tầm Nhìn</h3>
+                            <p class="wow fadeIn" data-animation="fadeIn" data-animation-delay="02">Với mong muốn xây dựng một tổ chức đào tạo anh ngữ hàng đầu trong khu vực, ASEC sẽ từng bước hoàn thiện nhằm khơi dậy tiềm năng của mỗi học viên thông qua môi trường học tập năng động, hiện đại và chất lượng dành cho mọi đối tượng.</p>
                         </div>
                     </div>
                     <!-- End Service Icon 1 -->
 
                     <!-- Start Service Icon 2 -->
-                    <div class="col-md-4 col-sm-6 service-box service-center wow fadeIn">
+                    <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
                         <div class="service-icon">
                             <img src="images/icon/icon2.svg" alt="icon" class="img-responsive" />
                         </div>
                         <div class="service-content">
-                            <h3 class="red title">Sứ Mệnh</h3>
-                            <p>Giúp thế hệ trẻ Việt Nam vững vàng, tự tin hội nhập vào môi trường Quốc tế là sứ mệnh của chúng tôi.</p>
-                            <p>Không chỉ là sự thành thạo, lưu loát trong việc sử dụng ngôn ngữ như người bản xứ, mà học viên còn được bổ trợ những kiến thức, kỹ năng mềm giúp hòa nhập nhanh với môi trường quốc tế.</p>
+                            <h3 class="red title" data-animation="fadeIn" data-animation-delay="03">Sứ Mệnh</h3>
+                            <p class="wow fadeIn" data-animation="fadeIn" data-animation-delay="03">Giúp thế hệ trẻ Việt Nam vững vàng, tự tin hội nhập vào môi trường Quốc tế là sứ mệnh của chúng tôi.</p>
+                            <p class="wow fadeIn" data-animation="fadeIn" data-animation-delay="03">Không chỉ là sự thành thạo, lưu loát trong việc sử dụng ngôn ngữ như người bản xứ, mà học viên còn được bổ trợ những kiến thức, kỹ năng mềm giúp hòa nhập nhanh với môi trường quốc tế.</p>
                         </div>
                     </div>
                     <!-- End Service Icon 2 -->
 
                     <!-- Start Service Icon 3 -->
-                    <div class="col-md-4 col-sm-6 service-box service-center wow fadeIn">
+                    <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
 
                         <div class="service-icon">
                             <img src="images/icon/icon3.svg" alt="icon" class="img-responsive" />
                         </div>
                         <div class="service-content">
-                            <h3 class="red title">Giá Trị Cốt Lõi</h3>
-                            <p>Giá trị cốt lõi mà chúng tôi hướng đến là <strong>Con Người</strong>, xem đây là nhân tố tiên quyết, quan trọng nhất. Chúng tôi đề cao:</p>
-                            <p>- Chữ "Tâm" trong nghề, sự tận tâm trong từng công việc.</p>
-                            <p>- Sự uy tín với khách hàng.</p>
-                            <p>- Lòng nhiệt huyết, nỗ lực vươn đến sự hoàn thiện.</p>
+                            <h3 class="red title" data-animation="fadeIn" data-animation-delay="04">Giá Trị Cốt Lõi</h3>
+                            <p class="wow fadeIn" data-animation="fadeIn" data-animation-delay="04">Giá trị cốt lõi mà chúng tôi hướng đến là <strong>Con Người</strong>, xem đây là nhân tố tiên quyết, quan trọng nhất. Chúng tôi đề cao:</p>
+                            <p class="wow fadeIn" data-animation="fadeIn" data-animation-delay="04">- Chữ "Tâm" trong nghề, sự tận tâm trong từng công việc.</p>
+                            <p class="wow fadeIn" data-animation="fadeIn" data-animation-delay="04">- Sự uy tín với khách hàng.</p>
+                            <p class="wow fadeIn" data-animation="fadeIn" data-animation-delay="04">- Lòng nhiệt huyết, nỗ lực vươn đến sự hoàn thiện.</p>
                         </div>
 
                     </div>
@@ -153,18 +153,23 @@
                 <div class="section-video-content text-center">
 
                     <!-- Start Animations Text -->
-                    <h1 class="fittext wite-text uppercase tlt">
-                        <span class="texts">
+                    <h1 class="fittext wite-text uppercase tlt wow fadeInLeft">
+                        <%--<span class="texts">
                             <span>Hiện đại</span>
                             <span>Chuyên nghiệp</span>
                             <span>Tuyệt vời</span>
-                        </span>là mục tiêu của ASEC
+                        </span>--%>Chuyên nghiệp là mục tiêu của ASEC
                     </h1>
                     <!-- End Animations Text -->
 
 
                     <!-- Start Buttons -->
                     <a href="#" class="btn-system btn-large"><i class="fa fa-graduation-cap"></i>&nbsp;Đăng Ký Học Miễn Phí</a>
+                    <%--<div id="page-wrap1">
+                        <div id="well1">
+                            <h2><strong id="slider1"></strong><span>đăng ký học miễn phí</span></h2>
+                        </div>
+                    </div>--%>
                 </div>
                 <!-- End Section Content -->
 
@@ -237,7 +242,7 @@
                                 <ul class="nav nav-tabs" id="myTab">
                                     <div class="liner"></div>
                                     <li class="active">
-                                        <a href="#rule1" title="kid" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                        <a href="#rule1" title="kid" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="01">
                                             <span class="round-tabs one">
                                                 <img src="images/icon/kid.png" />
                                             </span>
@@ -245,14 +250,14 @@
                                     </li>
 
                                     <li>
-                                        <a href="#rule2" title="Junior" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                        <a href="#rule2" title="Junior" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="02">
                                             <span class="round-tabs two">
                                                 <img src="images/icon/Junior.png" />
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#rule3" title="Teens" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                        <a href="#rule3" title="Teens" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="03">
                                             <span class="round-tabs three">
                                                 <img src="images/icon/Teens.png" />
                                             </span>
@@ -260,7 +265,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="#rule4" title="Adults" class="btn-chuongtrinhhoc hvr-pulse-grow">
+                                        <a href="#rule4" title="Adults" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="04">
                                             <span class="round-tabs four">
                                                 <img src="images/icon/Adults.png" />
                                             </span>
@@ -273,13 +278,13 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade in active" id="rule1">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 wow bounceInLeft">
                                             <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
                                             <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
                                             <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
                                             <a href="#" class="btn btn-system">Đọc tiếp...</a>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image wow bounceInRight">
                                             <div class="image1">
                                                 <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
                                             </div>
@@ -292,13 +297,13 @@
                                 </div>
                                 <div class="tab-pane fade" id="rule2">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 wow fadeIn">
                                             <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
                                             <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
                                             <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
                                             <a href="#" class="btn btn-system">Đọc tiếp...</a>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image wow fadeIn">
                                             <div class="image1">
                                                 <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
                                             </div>
@@ -310,13 +315,13 @@
                                 </div>
                                 <div class="tab-pane fade" id="rule3">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 wow fadeIn">
                                             <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
                                             <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
                                             <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
                                             <a href="#" class="btn btn-system">Đọc tiếp...</a>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image wow fadeIn">
                                             <div class="image1">
                                                 <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
                                             </div>
@@ -328,13 +333,13 @@
                                 </div>
                                 <div class="tab-pane fade" id="rule4">
                                     <div class="row">
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 wow fadeIn">
                                             <h2 class="post-title">Học không theo quy tắc<span class="head-line"></span></h2>
                                             <p class="post-meta">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary.</p>
                                             <p class="post-content">Một phương pháp mới mà bạn không thể tin được đó là bạn vẫn sử dụng từ vựng và ngữ pháp đúng mà không cần học, bạn chỉ cần nghe các bài học Vocabulary, Listen & Answer Mini-Stories, Point Of View Stories, tức học tiếng Anh một cách tự động, tuyệt đối không cần ”tập trung” hay cố gắng ghi nhớ.</p>
                                             <a href="#" class="btn btn-system">Đọc tiếp...</a>
                                         </div>
-                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image wow fadeIn">
                                             <div class="image1">
                                                 <img src="images/hinhmau/bi-quyet-vua-lam-vua-hoc-tieng-anh-hieu-qua-cho-nguoi-di-lam.jpg" class="img-responsive" />
                                             </div>
@@ -371,7 +376,7 @@
                                 <asp:Repeater ID="rpTinTuc" runat="server">
                                     <ItemTemplate>
                                         <!-- Posts 1 -->
-                                        <div class="post-row item">
+                                        <div class="post-row item" data-animation="fadeIn" data-animation-delay="02">
                                             <div class="left-meta-post">
                                                 <div class="post-date"><span class="day"><%# Eval("DateOfCreate","{0:dd}") %></span><span class="month"><%# Eval("DateOfCreate","{0:MM}") %></span></div>
                                                 <div class="post-type"><i class="fa fa-picture-o"></i></div>
@@ -402,7 +407,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow rotateInDownLeft">
 
                         <!-- Classic Heading -->
                         <h2 class="classic-title"><span>Thông Tin</span></h2>
@@ -433,7 +438,7 @@
 
                     </div>
 
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 wow rotateInDownRight">
 
                         <h2 class="classic-title"><span>Nhanh Tay Nhận Quà</span></h2>
                         <h2 style="line-height: 150%; font-weight: 500; margin-left: 15%; font-size: 200%;">Hãy gọi cho chúng tôi <strong class="text-danger">086 267 6949</strong><br />

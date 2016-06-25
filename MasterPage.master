@@ -38,14 +38,16 @@
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="css/colors/red.css" title="red" media="screen" />
 
-    <!-- Custom CSS Styles  -->
-    <link href="css/custom.css" rel="stylesheet" />
-
     <%-- Animate Wow --%>
     <link href="css/animate_wow.css" rel="stylesheet" />
 
     <%-- PrettyPhoto --%>
     <link href="css/prettyPhoto.css" rel="stylesheet" />
+
+    <!-- Animate -->
+    <%--<link href="css/btnDangky.css" rel="stylesheet" />--%>
+
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -105,7 +107,8 @@
                             <div class="search-side">
                                 <a class="show-search"><i class="fa fa-search"></i></a>
                                 <div class="search-form">
-                                    <asp:TextBox ID="txtTimKiem" runat="server" OnTextChanged="txtTimKiem_TextChanged"></asp:TextBox>
+                                    <%--<asp:TextBox ID="txtTimKiem" runat="server"></asp:TextBox>--%>
+                                    <input type="text" value="" name="s" id="s" placeholder="Search the site..." />
                                 </div>
                                 <!-- /input-group -->
                             </div>
@@ -199,45 +202,24 @@
                             <div class="footer-widget twitter-widget">
                                 <h4 class="title">BÀI VIẾT MỚI NHẤT<span class="head-line"></span></h4>
                                 <ul>
-                                    <li>
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <a href="#">
-                                                    <img class="img-responsive" src="images/news.jpg" alt="..." />
-                                                </a>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading"><a href="#">HỌC TIẾNG ANH THƯƠNG MẠI TRÊN NHẬT BÁO PHỐ WALL</a></h5>
-                                                <span>Jul 29 2013</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <a href="#">
-                                                    <img class="img-responsive" src="images/news-2.jpg" alt="..." />
-                                                </a>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading"><a href="#">LÀM THẾ NÀO CHO TRẺ MỘT MÙA HÈ LÝ TƯỞNG?.</a></h5>
-                                                <span>Jul 29 2013</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="media">
-                                            <div class="pull-left">
-                                                <a href="#">
-                                                    <img class="img-responsive" src="images/news-3.jpg" alt="..." />
-                                                </a>
-                                            </div>
-                                            <div class="media-body">
-                                                <h5 class="media-heading"><a href="#">KHỞI ĐỘNG 'ĐẤU TRƯỜNG' TRANH TÀI TIẾNG ANH</a></h5>
-                                                <span>Jul 29 2013</span>
-                                            </div>
-                                        </div>
-                                    </li>
+                                    <asp:Repeater ID="rpPostMoiNhat" runat="server">
+                                        <ItemTemplate>
+                                            <li>
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <asp:LinkButton ID="LinkButton2" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
+                                                        <img alt="<%# Eval("ImagesName") %>" src="<%# HomeUrl + Eval("ImagesUrl") %>" class="img-responsive img-thumbnail" />
+                                                    </asp:LinkButton>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="post-title media-heading">
+                                                        <asp:LinkButton ID="LinkButton3" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'><%# Eval("PostTitle") %></asp:LinkButton></h5>
+                                                        <span class="post-date"><i class="fa fa-calendar"></i>&nbsp;<%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
                                 </ul>
                             </div>
                         </div>
@@ -309,16 +291,12 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
     <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <%--<script type="text/javascript" src="js/slidetounlock.js"></script>--%>
     <script type="text/javascript">
         $(document).ready(function () {
             new WOW().init();
 
             if ($(window).innerWidth() < 992) {
-                //$(window).scroll(function () {
-                //    if ($(window).scrollTop() >= 0) {
-                //        $(".navbar-top").add("<br />");
-                //    }
-                //});
                 $(".logo").css("margin-top", "-18%");
             }
 
