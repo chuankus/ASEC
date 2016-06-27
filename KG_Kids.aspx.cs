@@ -4,11 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Data;
 
-public partial class ChiTietBaiViet : System.Web.UI.Page
+public partial class KG_Kids : System.Web.UI.Page
 {
     private BLL_Post _post = new BLL_Post();
     private BLL_Category _category = new BLL_Category();
@@ -21,7 +21,7 @@ public partial class ChiTietBaiViet : System.Web.UI.Page
     {
         if (!Page.IsPostBack)
         {
-            PostDetail();
+            KhaiGiang();
             ChuyenMuc();
             TinXemNhieu();
             TinTuc();
@@ -33,17 +33,10 @@ public partial class ChiTietBaiViet : System.Web.UI.Page
     }
 
     //Main Column - Detail post
-    private void PostDetail()
+    private void KhaiGiang()
     {
-        try
-        {
-            int postid = Convert.ToInt32(RouteData.Values["id"].ToString());
-            rpDetailPost.DataSource = _post.PostDetail(postid);
-            rpDetailPost.DataBind();
-        }
-        catch (Exception)
-        {
-        }
+        rpASEC_Kids.DataSource = _post.KhaiGiang_ASEC_Kids();
+        rpASEC_Kids.DataBind();
     }
 
     //Right Column - Chuyên mục
@@ -109,7 +102,7 @@ public partial class ChiTietBaiViet : System.Web.UI.Page
         catch (Exception)
         {
 
-            
+
         }
     }
 
@@ -160,13 +153,13 @@ public partial class ChiTietBaiViet : System.Web.UI.Page
         try
         {
             string postid = RouteData.Values["id"].ToString();
-            rpPostLienQuan.DataSource = _post.PostCungChuDe(postid,6);
+            rpPostLienQuan.DataSource = _post.PostCungChuDe(postid, 6);
             rpPostLienQuan.DataBind();
         }
         catch (Exception)
         {
 
-            
+
         }
     }
 }

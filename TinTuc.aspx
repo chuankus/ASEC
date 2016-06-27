@@ -35,13 +35,13 @@
                         <%-- Start Chương Trình Học --%>
                         <asp:Repeater ID="rpTinTuc" runat="server">
                             <ItemTemplate>
-                                <div class="row">
+                                <div class="row post">
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                                         <asp:LinkButton ID="linkbtnDocTiep" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
                                             <img alt="<%# Eval("ImagesName") %>" src="<%# HomeUrl + Eval("ImagesUrl") %>" class="img-responsive img-thumbnail" />
                                         </asp:LinkButton>
                                     </div>
-                                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 post">
+                                    <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
                                         <h2 class="post-title">
                                             <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'><%# Eval("PostTitle") %></asp:LinkButton></h2>
                                         <p class="post-date"><i class="fa fa-calendar"></i>&nbsp;<%# Eval("DateOfCreate","{0: dd/MM/yyyy}") %> - <%# string.IsNullOrEmpty(Eval("ViewCount").ToString()) ? 0 : Eval("ViewCount") %>&nbsp;<i class="fa fa-eye"></i></p>
@@ -113,7 +113,7 @@
                                             <div class="media">
                                                 <div class="widget-thumb media-left">
                                                     <asp:LinkButton ID="LinkButton2" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
-                                                        <img alt="<%# Eval("ImagesName") %>" src="<%# HomeUrl + Eval("ImagesUrl") %>" class="img-responsive img-thumbnail" />
+                                                        <img alt="<%# Eval("ImagesName") %>" src="<%# HomeUrl + Eval("ImagesUrl") %>" class="img-responsive" />
                                                     </asp:LinkButton>
                                                 </div>
                                                 <div class="widget-content media-body">

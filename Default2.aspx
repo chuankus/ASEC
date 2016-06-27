@@ -1,8 +1,22 @@
 ﻿<%@ Page Title="Trang Chủ | Trung Tâm Ngoại Ngữ Chân Trời Mới" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default2.aspx.cs" Inherits="_Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <!-- Modal-->
+    <div class="modal fade" id="myModal" tabindex="-1" data-replace="true" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a class="close" data-dismiss="modal">
+                        <img src="images/icon/close-button.png" /></a>
+                    <img src="images/banner/TUAN-LE-VANG.png" class="img-responsive" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal-->
+
     <div id="TrangChu">
-        <!-- 1.Start Home Page Slider -->
+        <!-- Home Slider -->
         <section id="home">
             <!-- Carousel -->
             <div id="main-slide" class="carousel slide" data-ride="carousel">
@@ -85,18 +99,17 @@
             </div>
             <!-- /carousel -->
         </section>
-        <!-- End Home Page Slider -->
+        <!-- End Home Slider -->
 
 
-        <!-- 2. Start Chào Mừng -->
+        <!-- Chào Mừng -->
         <div class="section service">
             <div class="container">
                 <h1 class="text-center thin">CHÀO MỪNG TỚI TRUNG TÂM ANH NGỮ <strong class="red">ASEC</strong></h1>
                 <div class="row">
 
                     <!-- Start Service Icon 1 -->
-
-                    <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
                         <div class="service-icon">
                             <img src="images/icon/icon.svg" alt="icon" class="img-responsive" />
                         </div>
@@ -108,7 +121,7 @@
                     <!-- End Service Icon 1 -->
 
                     <!-- Start Service Icon 2 -->
-                    <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
                         <div class="service-icon">
                             <img src="images/icon/icon2.svg" alt="icon" class="img-responsive" />
                         </div>
@@ -121,7 +134,7 @@
                     <!-- End Service Icon 2 -->
 
                     <!-- Start Service Icon 3 -->
-                    <div class="col-md-4 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
 
                         <div class="service-icon">
                             <img src="images/icon/icon3.svg" alt="icon" class="img-responsive" />
@@ -145,7 +158,7 @@
         <!-- End Chào Mừng -->
 
 
-        <!-- 3. Start Lớp Học Đang Hot -->
+        <!-- Đăng ký học miễn phí -->
         <div class="section purchase">
             <div class="container">
 
@@ -164,74 +177,17 @@
 
 
                     <!-- Start Buttons -->
-                    <a href="#" class="btn-system btn-large"><i class="fa fa-graduation-cap"></i>&nbsp;Đăng Ký Học Miễn Phí</a>
-                    <%--<div id="page-wrap1">
-                        <div id="well1">
-                            <h2><strong id="slider1"></strong><span>đăng ký học miễn phí</span></h2>
-                        </div>
-                    </div>--%>
+                    <a href="#Event" class="btn-system btn-large"><i class="fa fa-graduation-cap"></i>&nbsp;Đăng Ký Học Miễn Phí</a>
                 </div>
                 <!-- End Section Content -->
 
             </div>
         </div>
         <br />
-        <!-- End Lớp Học Đang Hot -->
+        <!-- End Đăng ký học miễn phí -->
 
 
-        <!-- 4. Start Chương trình học -->
-        <%--<div class="section portfolio-3column" style="border-top: 0; border-bottom: 0; background: #fff;">
-            <div class="container text-center">
-                <!-- Start Big Heading -->
-                <div class="big-title text-center wow fadeIn">
-                    <h1>CHƯƠNG TRÌNH HỌC</h1>
-                </div>
-                <!-- End Big Heading -->
-
-                <p class="text-center">
-                    Thông tin các lớp học tại trung tâm ngoại ngữ Chân Trời Mới được cập nhật tại đây.
-                </p>
-
-
-                <div class="row" id="portfolio-list">
-                    <asp:Repeater ID="rpPostMoiNhat" runat="server">
-                        <ItemTemplate>
-                            <div class="li col-md-4">
-                                <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive img-thumbnail" />
-                                <div class="portfolio-item-content">
-                                    <a href="ChiTiet.aspx?post=<%# Eval("PostID") %>">
-                                        <span class="header"><%# Eval("PostTitle") %></span>
-                                        <p class="body"><%# Eval("MetaDescription") %></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </ItemTemplate>
-                    </asp:Repeater>
-                </div>
-                <br />
-                <a href="ChuongTrinhHoc.aspx" class="btn-system btn-large">Xem Toàn Bộ</a>
-            </div>
-            <!-- Start Recent Projects Carousel -->
-            <ul id="portfolio-list" class="wow fadeIn">
-                <asp:Repeater ID="rpPostMoiNhat" runat="server">
-                    <ItemTemplate>
-                        <li>
-                            <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" />
-                            <div class="portfolio-item-content">
-                                <a href="ChiTiet.aspx?post=<%# Eval("PostID") %>">
-                                    <span class="header"><%# Eval("PostTitle") %></span>
-                                    <p class="body"><%# Eval("MetaDescription") %></p>
-                                </a>
-                            </div>
-                        </li>
-                    </ItemTemplate>
-                </asp:Repeater>
-                
-            </ul>
-            <!-- End Recent Projects Carousel -->
-
-
-        </div>--%>
+        <!-- Chương trình học -->
         <section class="chuongtrinhhoc">
             <div class="container">
                 <div class="row">
@@ -239,10 +195,10 @@
                         <h1 class="text-center thin">Chương Trình Học Tại <strong class="red">ASEC</strong></h1>
                         <div class="board">
                             <div class="board-inner">
-                                <ul class="nav nav-tabs" id="myTab">
+                                <ul class="nav nav-tabs" id="myTab" data-animation="fadeIn" data-animation-delay="02">
                                     <div class="liner"></div>
                                     <li class="active">
-                                        <a href="#rule1" title="kid" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="01">
+                                        <a href="#rule1" title="kid" class="btn-chuongtrinhhoc hvr-pulse-grow">
                                             <span class="round-tabs one">
                                                 <img src="images/icon/kid.png" />
                                             </span>
@@ -250,14 +206,14 @@
                                     </li>
 
                                     <li>
-                                        <a href="#rule2" title="Junior" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="02">
+                                        <a href="#rule2" title="Junior" class="btn-chuongtrinhhoc hvr-pulse-grow">
                                             <span class="round-tabs two">
                                                 <img src="images/icon/Junior.png" />
                                             </span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#rule3" title="Teens" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="03">
+                                        <a href="#rule3" title="Teens" class="btn-chuongtrinhhoc hvr-pulse-grow">
                                             <span class="round-tabs three">
                                                 <img src="images/icon/Teens.png" />
                                             </span>
@@ -265,7 +221,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="#rule4" title="Adults" class="btn-chuongtrinhhoc hvr-pulse-grow" data-animation="fadeIn" data-animation-delay="04">
+                                        <a href="#rule4" title="Adults" class="btn-chuongtrinhhoc hvr-pulse-grow">
                                             <span class="round-tabs four">
                                                 <img src="images/icon/Adults.png" />
                                             </span>
@@ -358,15 +314,14 @@
             </div>
         </section>
         <br />
-        <br />
         <!-- End Chương trình học -->
 
 
-        <!-- 7. Start Testimonials Section -->
-        <div>
+        <!-- Tin Tức -->
+        <div id="TinTuc">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-xs-12">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-xs-12">
 
                         <!-- Start Recent Posts Carousel -->
                         <div class="latest-posts">
@@ -375,18 +330,27 @@
 
                                 <asp:Repeater ID="rpTinTuc" runat="server">
                                     <ItemTemplate>
-                                        <!-- Posts 1 -->
+                                        <!-- Item -->
                                         <div class="post-row item" data-animation="fadeIn" data-animation-delay="02">
                                             <div class="left-meta-post">
                                                 <div class="post-date"><span class="day"><%# Eval("DateOfCreate","{0:dd}") %></span><span class="month"><%# Eval("DateOfCreate","{0:MM}") %></span></div>
                                                 <div class="post-type"><i class="fa fa-picture-o"></i></div>
                                             </div>
-                                            <h3 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h3>
+                                            <h3 class="post-title">
+                                                <asp:LinkButton ID="LinkButton5" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
+                                                    <%# Eval("PostTitle") %>
+                                                </asp:LinkButton>
+                                            </h3>
                                             <div class="post-meta">
                                                 <p><%# Eval("MetaDescription") %></p>
                                             </div>
-                                            <div class="post-bottom"><a class="read-more" href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">Đọc tiếp...</a></div>
+                                            <div class="post-bottom">
+                                                <asp:LinkButton ID="LinkButton6" runat="server" CssClass="read-more" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
+                                                    Đọc tiếp
+                                                </asp:LinkButton>
+                                            </div>
                                         </div>
+                                        <!-- End Item -->
                                     </ItemTemplate>
                                 </asp:Repeater>
 
@@ -399,10 +363,10 @@
             </div>
         </div>
         <br />
-        <!-- End Testimonials Section -->
+        <!-- End Tin Tức -->
 
 
-        <%-- 5. Sự kiện tặng quà --%>
+        <!-- Sự kiện tặng quà -->
         <div id="Event">
             <div class="container">
                 <div class="row">
@@ -453,6 +417,6 @@
                 <br />
             </div>
         </div>
-        <%-- End Sự kiện tặng quà --%>
+        <!-- End Sự kiện tặng quà -->
     </div>
 </asp:Content>

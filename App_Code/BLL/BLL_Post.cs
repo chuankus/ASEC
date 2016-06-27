@@ -179,13 +179,13 @@ public class BLL_Post
         return result;
     }
 
-    //Bài viết cùng chủ đề
-    public DataTable PostCungChuDe(string idPost)
+    //Bài viết liên quan
+    public DataTable PostCungChuDe(string idPost, int top)
     {
         if (!this.OpenConnect())
             this.OpenConnect();
 
-        string query = "select * from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID join Images img on p.PostImage = img.ImagesID where p_ct.CategoryID = ( select p_ct.CategoryID from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID where p.PostID = " + idPost + " ) and p.PostID != " + idPost;
+        string query = "select top " + top + " * from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID join Images img on p.PostImage = img.ImagesID where p_ct.CategoryID = ( select p_ct.CategoryID from POST p join Post_Category_relationships p_ct on p.PostID = p_ct.PostID where p.PostID = " + idPost + " ) and p.PostID != " + idPost;
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();
@@ -212,6 +212,54 @@ public class BLL_Post
 
         //string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where FREETEXT((PostTitle), '" + keyword + "')";
         string query = "select * from POST p join Images img on p.PostImage = img.ImagesID where p.PostTitle like N'%" + keyword + "%'";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lịch Khai Giảng Lớp ASEC Kids
+    public DataTable KhaiGiang_ASEC_Kids()
+    {
+        this.OpenConnect();
+
+        string query = "select * from POST p join Post_Category_relationships p_ct on p_ct.PostID = p.PostID join Category ct on ct.CategoryID = p_ct.CategoryID join Images img on p.PostImage = img.ImagesID where ct.CategoryName like N'ASEC KIDS'";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lịch Khai Giảng Lớp ASEC Juniors
+    public DataTable KhaiGiang_ASEC_Juniors()
+    {
+        this.OpenConnect();
+
+        string query = "select * from POST p join Post_Category_relationships p_ct on p_ct.PostID = p.PostID join Category ct on ct.CategoryID = p_ct.CategoryID join Images img on p.PostImage = img.ImagesID where ct.CategoryName like N'ASEC JUNIORS'";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lịch Khai Giảng Lớp ASEC Teens
+    public DataTable KhaiGiang_ASEC_Teens()
+    {
+        this.OpenConnect();
+
+        string query = "select * from POST p join Post_Category_relationships p_ct on p_ct.PostID = p.PostID join Category ct on ct.CategoryID = p_ct.CategoryID join Images img on p.PostImage = img.ImagesID where ct.CategoryName like N'ASEC TEENS'";
+        DataTable result = this._connect.GetDataTable(query);
+
+        this.CloseConnect();
+        return result;
+    }
+
+    //Lịch Khai Giảng Lớp ASEC Adults
+    public DataTable KhaiGiang_ASEC_Adults()
+    {
+        this.OpenConnect();
+
+        string query = "select * from POST p join Post_Category_relationships p_ct on p_ct.PostID = p.PostID join Category ct on ct.CategoryID = p_ct.CategoryID join Images img on p.PostImage = img.ImagesID where ct.CategoryName like N'ASEC ADULTS'";
         DataTable result = this._connect.GetDataTable(query);
 
         this.CloseConnect();

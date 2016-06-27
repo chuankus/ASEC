@@ -36,7 +36,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">
                                             <i class="fa fa-angle-up control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Phương pháp học ở ASEC là phương pháp gì ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-1" class="panel-collapse collapse in">
@@ -52,7 +52,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Có bao nhiêu học viên trong 1 lớp học ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-2" class="panel-collapse collapse">
@@ -68,7 +68,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Giáo viên là người Việt hay người nước ngoài ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-3" class="panel-collapse collapse">
@@ -84,7 +84,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-4" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Chính sách bảo đảm chất lượng khóa học thế nào ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-4" class="panel-collapse collapse">
@@ -100,7 +100,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-5" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>ASEC thường có những hoạt động ngoại khóa gì không ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-5" class="panel-collapse collapse">
@@ -116,7 +116,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-6" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Trung tâm dạy giáo trình gì?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-6" class="panel-collapse collapse">
@@ -132,7 +132,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-7" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Cơ sở vật chất ra sao ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-7" class="panel-collapse collapse">
@@ -148,7 +148,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-8" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Thời gian học một khóa như thế nào ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-8" class="panel-collapse collapse">
@@ -164,7 +164,7 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-9" class="collapsed">
                                             <i class="fa fa-angle-down control-icon"></i>
                                             <i class="fa fa-question-circle"></i>Tôi muốn học thử có được không ?
-                                </a>
+                                        </a>
                                     </h4>
                                 </div>
                                 <div id="collapse-9" class="panel-collapse collapse">

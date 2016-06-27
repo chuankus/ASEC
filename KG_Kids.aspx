@@ -1,28 +1,27 @@
-﻿<%@ Page Title="Chi Tiết | Trung Tâm Ngoại Ngữ Chân Trời Mới" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ChiTiet.aspx.cs" Inherits="ChiTietBaiViet" %>
+﻿<%@ Page Title="Khai Giảng Kids | Trung Tâm Ngoại Ngữ Chân Trời Mới" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="KG_Kids.aspx.cs" Inherits="KG_Kids" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <div id="ChiTietBaiViet">
-        <!-- Breadcrumb -->
-        <div class="page-banner">
+    <div id="KG_Kids">
+        <!-- Start Page Banner -->
+        <div class="page-banner no-subtitle">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <h2 class="title-page">Bài Viết</h2>
+                        <h2 class="title-page">ASEC Kids</h2>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul class="breadcrumbs">
                             <li><a href="Default2.aspx">Trang Chủ</a></li>
-                            <li><a href="<%=UrlBreadcrumb %>"><%=Breadcrumb %></a></li>
-                            <li>Bài Viết</li>
+                            <li><a href="#">Lịch Khai Giảng</a></li>
+                            <li>ASEC Kids</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Breadcrumb -->
+        <!-- End Page Banner -->
 
-
-        <!-- Content -->
+        <!-- Content-->
         <div id="content">
             <div class="container">
                 <div class="row">
@@ -33,11 +32,10 @@
                         <!-- Detail Post -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <asp:Repeater ID="rpDetailPost" runat="server">
+                                <asp:Repeater ID="rpASEC_Kids" runat="server">
                                     <ItemTemplate>
                                         <div class="blog-post gallery-post">
                                             <div class="post-content">
-                                                <%--<div class="post-type"></div>--%>
                                                 <h2><i class="fa fa-picture-o"></i>&nbsp;<%# Eval("PostTitle") %></h2>
                                                 <p class="post-date"><i class="fa fa-calendar"></i>&nbsp;<%# Eval("DateOfCreate","{0: dd/MM/yyyy}") %> - &nbsp;<i class="fa fa-eye"></i>&nbsp;<%# Eval("ViewCount") %></p>
                                                 <p><%# Eval("PostContentVN") %></p>
@@ -204,6 +202,6 @@
                 </div>
             </div>
         </div>
-        <!-- End Content -->
+        <!-- End Content-->
     </div>
 </asp:Content>
