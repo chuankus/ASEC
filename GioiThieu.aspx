@@ -63,36 +63,36 @@
                                 <div class="skill">
                                     <p>ASEC KIDS</p>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" data-percentage="70">
-                                            <span class="progress-bar-span">70%</span>
-                                            <span class="sr-only">70% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill">
-                                    <p>ASEC JUNIORS</p>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" data-percentage="80">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" data-percentage="80">
                                             <span class="progress-bar-span">80%</span>
                                             <span class="sr-only">80% Complete</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skill">
+                                    <p>ASEC JUNIORS</p>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" data-percentage="90">
+                                            <span class="progress-bar-span">90%</span>
+                                            <span class="sr-only">90% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill">
                                     <p>ASEC TEENS</p>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" data-percentage="75">
-                                            <span class="progress-bar-span">75%</span>
-                                            <span class="sr-only">75% Complete</span>
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" data-percentage="85">
+                                            <span class="progress-bar-span">85%</span>
+                                            <span class="sr-only">85% Complete</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="skill">
                                     <p>ASEC ADULTS</p>
                                     <div class="progress">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" data-percentage="90">
-                                            <span class="progress-bar-span">90%</span>
-                                            <span class="sr-only">90% Complete</span>
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" data-percentage="88">
+                                            <span class="progress-bar-span">88%</span>
+                                            <span class="sr-only">88% Complete</span>
                                         </div>
                                     </div>
                                 </div>

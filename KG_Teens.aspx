@@ -32,7 +32,8 @@
                         <!-- Detail Post -->
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <asp:Repeater ID="rpASEC_Teens" runat="server">
+                                <h2 class="alert alert-danger">Hiện tại vẫn chưa có lớp mới. Quý khách vui lòng quay lại sau.</h2>
+                                <%--<asp:Repeater ID="rpASEC_Teens" runat="server">
                                     <ItemTemplate>
                                         <div class="blog-post gallery-post">
                                             <div class="post-content">
@@ -51,7 +52,7 @@
                                             </div>
                                         </div>
                                     </ItemTemplate>
-                                </asp:Repeater>
+                                </asp:Repeater>--%>
                             </div>
                         </div>
                         <!-- End Detail Post -->

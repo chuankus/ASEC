@@ -35,8 +35,8 @@ public partial class KG_Teens : System.Web.UI.Page
     //Main Column - Detail post
     private void KhaiGiang()
     {
-        rpASEC_Teens.DataSource = _post.KhaiGiang_ASEC_Teens();
-        rpASEC_Teens.DataBind();
+        //rpASEC_Teens.DataSource = _post.KhaiGiang_ASEC_Teens();
+        //rpASEC_Teens.DataBind();
     }
 
     //Right Column - Chuyên mục

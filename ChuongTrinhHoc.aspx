@@ -118,7 +118,8 @@
                                                 </div>
                                                 <div class="widget-content media-body">
                                                     <h5 class="post-title">
-                                                        <asp:LinkButton ID="LinkButton3" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'><%# Eval("PostTitle") %></asp:LinkButton></h5>
+                                                        <asp:LinkButton ID="LinkButton3" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'><%# Eval("PostTitle") %></asp:LinkButton>
+                                                    </h5>
                                                     <span class="post-date"><i class="fa fa-calendar"></i>&nbsp;<%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %> - &nbsp;<i class="fa fa-eye"></i>&nbsp;<%# string.IsNullOrEmpty(Eval("ViewCount").ToString()) ? 0 : Eval("ViewCount") %></span>
                                                 </div>
                                             </div>

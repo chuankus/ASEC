@@ -107,7 +107,8 @@
                                 <div class="search-side">
                                     <a class="show-search"><i class="fa fa-search"></i></a>
                                     <div class="search-form">
-                                        <input type="text" value="" name="s" id="s" placeholder="Search the site..." />
+                                        <%--<input type="text" value="" name="s" id="s" placeholder="Search the site..." />--%>
+                                        <asp:TextBox ID="txtQuery" runat="server" OnTextChanged="txtQuery_TextChanged"></asp:TextBox>
                                     </div>
                                     <!-- /input-group -->
                                 </div>
@@ -258,6 +259,10 @@
         <!-- Go To Top Link -->
         <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
     </form>
+
+    <!-- Start Subiz Chat-->
+    <script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",38851]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
+    <!-- End Subiz Chat-->
 
     <!-- FB Fanpage Script-->
     <div id="fb-root"></div>

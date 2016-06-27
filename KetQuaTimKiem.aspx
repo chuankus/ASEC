@@ -29,17 +29,20 @@
                     <!-- Start Kết Quả Tìm Kiếm -->
                     <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
 
+                        <h3 class="alert alert-info">Từ khóa tìm kiếm: <%=kw.ToString() %></h3><br />
+
                         <asp:Repeater ID="rpKetQuaTimKiem" runat="server">
                             <ItemTemplate>
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                        <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">
+                                        <asp:LinkButton ID="linkbtnDocTiep" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
                                             <img alt="<%# Eval("ImagesName") %>" src="<%# HomeUrl + Eval("ImagesUrl") %>" class="img-responsive img-thumbnail" />
-                                        </a>
+                                        </asp:LinkButton>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-8 col-lg-8 post">
-                                        <h2 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h2>
-                                        <p class="post-date">Đăng vào ngày <%# Eval("DateOfCreate","{0: dd/MM/yyyy}") %></p>
+                                        <h2 class="post-title"><h2 class="post-title">
+                                            <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'><%# Eval("PostTitle") %></asp:LinkButton></h2>
+                                        <p class="post-date"><i class="fa fa-calendar"></i>&nbsp;<%# Eval("DateOfCreate","{0: dd/MM/yyyy}") %> - &nbsp;<i class="fa fa-eye"></i>&nbsp;<%# string.IsNullOrEmpty(Eval("ViewCount").ToString()) ? 0 : Eval("ViewCount") %></p>
                                         <p class="post-meta"><%# Eval("MetaDescription") %></p>
                                         <p class="post-bottom"><a class="main-button" href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">Đọc tiếp <i class="fa fa-angle-right"></i></a></p>
                                     </div>
@@ -104,12 +107,15 @@
                                         <li>
                                             <div class="media">
                                                 <div class="widget-thumb media-left">
-                                                    <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">
-                                                        <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
+                                                    <asp:LinkButton ID="LinkButton2" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
+                                                        <img alt="<%# Eval("ImagesName") %>" src="<%# HomeUrl + Eval("ImagesUrl") %>" class="img-responsive" />
+                                                    </asp:LinkButton>
                                                 </div>
                                                 <div class="widget-content media-body">
-                                                    <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                    <span class="post-date">Đăng ngày <%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                    <h5 class="post-title">
+                                                        <asp:LinkButton ID="LinkButton3" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'><%# Eval("PostTitle") %></asp:LinkButton>
+                                                    </h5>
+                                                    <span class="post-date"><i class="fa fa-calendar"></i>&nbsp;<%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %> - &nbsp;<i class="fa fa-eye"></i>&nbsp;<%# string.IsNullOrEmpty(Eval("ViewCount").ToString()) ? 0 : Eval("ViewCount") %></span>
                                                 </div>
                                             </div>
                                             <div class="clearfix"></div>
@@ -151,12 +157,13 @@
                                         <li>
                                             <div class="media">
                                                 <div class="widget-thumb media-left">
-                                                    <a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>">
-                                                        <img src="<%# HomeUrl + Eval("ImagesUrl") %>" alt="<%# Eval("ImagesName") %>" class="img-responsive" /></a>
+                                                    <asp:LinkButton ID="LinkButton4" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'>
+                                                        <img alt="<%# Eval("ImagesName") %>" src="<%# HomeUrl + Eval("ImagesUrl") %>" class="img-responsive" />
+                                                    </asp:LinkButton>
                                                 </div>
                                                 <div class="widget-content media-body">
-                                                    <h5 class="post-title"><a href="<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) %>-<%# Eval("PostID") %>"><%# Eval("PostTitle") %></a></h5>
-                                                    <span class="post-date">Đăng ngày <%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %></span>
+                                                    <h5 class="post-title"><asp:LinkButton ID="LinkButton3" runat="server" CommandArgument='<%# Eval("PostID") %>' OnClick="linkbtnDocTiep_Click" NavigateUrl='<%# XoaKyTuDacBiet(Eval("PostTitle").ToString()) + "-" + Eval("PostID") %>'><%# Eval("PostTitle") %></asp:LinkButton></h5>
+                                                    <span class="post-date"><i class="fa fa-calendar"></i>&nbsp;<%# Eval("DateOfCreate","{0:dd/MM/yyyy}") %> - &nbsp;<i class="fa fa-eye"></i>&nbsp;<%# string.IsNullOrEmpty(Eval("ViewCount").ToString()) ? 0 : Eval("ViewCount") %></span>
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </div>

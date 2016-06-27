@@ -57,7 +57,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     //    if (keyword == "")
     //        Response.Redirect("Default2.aspx");
     //    else
-    //        Response.Redirect("KetQuaTimKiem.aspx?keyword= " + XoaKyTuDacBiet(keyword));
+    //        Response.Redirect("KetQuaTimKiem.aspx?keyword= " + keyword);
     //}
 
     //Chuyển tiêu đề tiếng việt có dấu sang không dấu dạng URL abc-def-ghi
@@ -136,4 +136,14 @@ public partial class MasterPage : System.Web.UI.MasterPage
         Response.Redirect(XoaKyTuDacBiet(PostTitle(postid)).ToLower() + "-" + postid);
     }
     //end tăng view
+
+    protected void txtQuery_TextChanged(object sender, EventArgs e)
+    {
+        string keyword = txtQuery.Text;
+
+        if (keyword == "")
+            Response.Redirect("Default2.aspx");
+        else
+            Response.Redirect("KetQuaTimKiem.aspx?keyword=" + keyword);
+    }
 }
