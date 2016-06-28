@@ -60,7 +60,7 @@
 
                         <!-- Bài viết liên quan-->
                         <div class="latest-posts">
-                            <h2 class="classic-title"><span>Bài Viết Liên Quan</span></h2>
+                            <%--<h2 class="classic-title"><span>Bài Viết Liên Quan</span></h2>--%>
                             <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="3">
 
                                 <asp:Repeater ID="rpPostLienQuan" runat="server">

@@ -5,17 +5,18 @@
 
     void RegisterRoutes(RouteCollection routes)
     {
+        //Detail post để sau cùng, tránh tình trạng chuyển hướng sai
+        routes.MapPageRoute("Default2", "trang-chu", "~/Default2.aspx");
+        routes.MapPageRoute("ChuongTrinhHoc", "chuong-trinh-hoc", "~/ChuongTrinhHoc.aspx");
+        routes.MapPageRoute("Album", "albums", "~/Albums.aspx");
+        routes.MapPageRoute("HoiDap", "hoi-dap", "~/Faq.aspx");
+        routes.MapPageRoute("GioiThieu", "gioi-thieu", "~/GioiThieu.aspx");
+        routes.MapPageRoute("LichKhaiGiang", "lich-khai-giang", "~/LichKhaiGiang.aspx");
+        routes.MapPageRoute("LienHe", "lien-he", "~/LienHe.aspx");
+        routes.MapPageRoute("TinTuc", "tin-tuc", "~/TinTuc.aspx");
+        routes.MapPageRoute("TinXemNhieu", "tin-xem-nhieu", "~/TinXemNhieu.aspx");
+        routes.MapPageRoute("TuyenDung", "tuyen-dung", "~/TuyenDung.aspx");
         routes.MapPageRoute("DetailPost", "{title}-{id}", "~/ChiTiet.aspx");
-        //routes.MapPageRoute("Default2", "trang-chu", "~/Default2.aspx");
-        //routes.MapPageRoute("ChuongTrinhHoc", "chuong-trinh-hoc", "~/ChuongTrinhHoc.aspx");
-        //routes.MapPageRoute("Album", "albums", "~/Albums.aspx");
-        //routes.MapPageRoute("HoiDap", "hoi-dap", "~/Faq.aspx");
-        //routes.MapPageRoute("GioiThieu", "gioi-thieu", "~/GioiThieu.aspx");
-        //routes.MapPageRoute("LichKhaiGiang", "lich-khai-giang", "~/LichKhaiGiang.aspx");
-        //routes.MapPageRoute("LienHe", "lien-he", "~/LienHe.aspx");
-        //routes.MapPageRoute("TinTuc", "tin-tuc", "~/TinTuc.aspx");
-        //routes.MapPageRoute("TinXemNhieu", "tin-xem-nhieu", "~/TinXemNhieu.aspx");
-        //routes.MapPageRoute("TuyenDung", "tuyen-dung", "~/TuyenDung.aspx");
     }
 
     void Application_Start(object sender, EventArgs e)
