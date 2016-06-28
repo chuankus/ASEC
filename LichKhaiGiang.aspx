@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                         <ul class="breadcrumbs">
-                            <li><a href="Default2.aspx">Trang Chủ</a></li>
+                            <li><a href="trang-chu">Trang Chủ</a></li>
                             <li>Lịch Khai Giảng</li>
                         </ul>
                     </div>

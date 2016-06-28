@@ -1,0 +1,11 @@
+/*Responsive*/
+@media (min-width: 480px) {
+  /*Logo & Navigation*/
+  /*Trang Chủ*/
+  #home {
+    display: none;
+  }
+  #main-slide {
+    display: none;
+  }
+}

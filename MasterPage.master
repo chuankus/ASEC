@@ -30,7 +30,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
     <!-- Responsive CSS Styles  -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />
+    <%--<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />--%>
+    <link rel="stylesheet" type="text/css" href="css/responsive2.css" media="screen" />
 
     <!-- Css3 Transitions Styles  -->
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
@@ -43,9 +44,7 @@
 
     <%-- PrettyPhoto --%>
     <link href="css/prettyPhoto.css" rel="stylesheet" />
-
-    <!-- Animate -->
-    <%--<link href="css/btnDangky.css" rel="stylesheet" />--%>
+    
 </head>
 <body style="position: relative" data-spy="scroll" data-target=".purchase">
     <form id="form1" runat="server">
@@ -60,7 +59,7 @@
                     <div class="top-bar">
                         <div class="container">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+                                <div class="hidden-xs col-sm-6 col-md-7 col-lg-7">
                                     <!-- Start Contact Info -->
                                     <ul class="contact-details">
                                         <li><a href="#"><i class="fa fa-envelope-o"></i>&nbsp;info@americantop.edu.vn</a></li>
@@ -69,7 +68,7 @@
                                     <!-- End Contact Info -->
                                 </div>
                                 <!-- .col-md-6 -->
-                                <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                                <div class="hidden-xs col-sm-6 col-md-5 col-lg-5">
                                     <!-- Start Social Links -->
                                     <ul class="social-list">
                                         <li>
@@ -96,9 +95,11 @@
                                 <!-- Start Toggle Nav Link For Mobiles -->
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                                     <i class="fa fa-bars"></i>
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-bars"></i>
                                 </button>
                                 <!-- End Toggle Nav Link For Mobiles -->
-                                <a class="navbar-brand" href="Default2.aspx">
+                                <a class="navbar-brand" href="trang-chu">
                                     <img alt="logo" src="images/logo.png" class="img-responsive logo" />
                                 </a>
                             </div>
@@ -322,6 +323,10 @@
     <script type="text/javascript">
         $(document).ready(function () {
             new WOW().init();
+
+            if ($(window).innerWidth() < 480) {
+                $("#myModal").css("display", "none");
+            }
 
             if ($(window).innerWidth() < 992) {
                 $(".logo").css("margin-top", "-18%");

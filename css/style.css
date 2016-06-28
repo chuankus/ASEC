@@ -5996,7 +5996,6 @@ ul.footer-nav {
 /* start logo */
 .logo {
     width: 100%;
-    /*height: auto;*/
     height: auto;
     margin-top: -8%;
 }
@@ -6431,8 +6430,7 @@ ul.footer-nav {
         height: auto;
     }
 /*end hinh anh xep chong chương trình học*/
-/*post-bottom*/
-/*end post-bottom*/
+
 /*btn chương trình học*/
 .btn-chuongtrinhhoc {
     z-index: 2;
