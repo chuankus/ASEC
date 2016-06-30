@@ -28,9 +28,8 @@
                 <div class="row">
                     <!-- Start Kết Quả Tìm Kiếm -->
                     <div class="col-xs-12 col-sm-6 col-md-9 col-lg-9">
-
-                        <h3 class="alert alert-info">Từ khóa tìm kiếm: <%=kw.ToString() %></h3><br />
-
+                        <h3 class="alert alert-info">Kết quả tìm kiếm cho: <%=kw.ToString() %></h3><br />
+                        <h3 class="alert alert-danger" id="NoResult" runat="server"></h3>
                         <asp:Repeater ID="rpKetQuaTimKiem" runat="server">
                             <ItemTemplate>
                                 <div class="row">

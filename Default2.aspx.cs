@@ -32,8 +32,8 @@ public partial class _Default2 : System.Web.UI.Page
     //Tin tức
     private void LayTinTuc()
     {
-        rpTinTuc.DataSource = _post.TopNews(6);
-        rpTinTuc.DataBind();
+        //rpTinTuc.DataSource = _post.TopNews(6);
+        //rpTinTuc.DataBind();
     }
 
     private void ResetTextbox()

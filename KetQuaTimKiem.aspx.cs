@@ -29,13 +29,21 @@ public partial class KetQuaTimKiem : System.Web.UI.Page
     private void KQTK()
     {
         kw = Request.QueryString["keyword"];
-
         kw = kw.Replace("%20", " ");
 
-        pager1.PageSize = 6;
-        pager1.DataSource = _post.TimKiemFTS(kw).DefaultView;
-        pager1.BindToControl = rpKetQuaTimKiem;
-        rpKetQuaTimKiem.DataSource = pager1.DataSourcePaged;
+        DataTable result = _post.TimKiemFTS(kw);
+
+        if (result.Rows.Count != 0)
+        {
+            pager1.PageSize = 6;
+            pager1.DataSource = _post.TimKiemFTS(kw).DefaultView;
+            pager1.BindToControl = rpKetQuaTimKiem;
+            rpKetQuaTimKiem.DataSource = pager1.DataSourcePaged;
+        }
+        else
+        {
+            NoResult.InnerText = "Không tìm thấy kết quả tương ứng";
+        }
     }
 
     //Right Column - Chuyên mục

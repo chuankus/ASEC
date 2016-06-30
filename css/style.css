@@ -6345,7 +6345,7 @@ ul.footer-nav {
 /*end circular bootstrap chương trình học*/
 /*parallax trang chủ*/
 .purchase {
-    background: url(../images/banner/bg7-min.jpg) no-repeat;
+    background: url(../images/default_bg.png) no-repeat;
     background-attachment: fixed;
     padding: 100px 0;
 }
@@ -6478,7 +6478,7 @@ ul.footer-nav {
     }
 /*effect hover button*/
 /*.red*/
-.red {
+.notes {
     color: #ee3733;
 }
 /*end .red*/
@@ -6578,21 +6578,34 @@ ul.footer-nav {
     border: none !important;
     box-shadow: none !important;
 }
-.modal-content .img-responsive{
-    padding-right:50px;
-}
+
+    .modal-content .img-responsive {
+        padding-right: 50px;
+    }
 
 a.close img {
     color: red;
-    background-color:black!important;
-    opacity:1!important;
-    margin-bottom:50px;
-    width:35px;
-    height:35px;
+    background-color: black !important;
+    opacity: 1 !important;
+    margin-bottom: 50px;
+    width: 35px;
+    height: 35px;
 }
 
-.cover-menu{
-    background-color:black;
-    opacity:0.5;
+.cover-menu {
+    background-color: black;
+    opacity: 0.5;
 }
+
+/*Học Tiếng Anh*/
+#owl-hoctienganh .item {
+    margin: 3px;
+}
+
+    #owl-hoctienganh .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+/*End Học tiếng anh*/
 /*********************end Custom.css***************/

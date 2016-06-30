@@ -44,7 +44,7 @@
 
     <%-- PrettyPhoto --%>
     <link href="css/prettyPhoto.css" rel="stylesheet" />
-    
+
 </head>
 <body style="position: relative" data-spy="scroll" data-target=".purchase">
     <form id="form1" runat="server">
@@ -94,9 +94,10 @@
                             <div class="navbar-header">
                                 <!-- Start Toggle Nav Link For Mobiles -->
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <i class="fa fa-bars"></i>
-                                    <i class="fa fa-bars"></i>
-                                    <i class="fa fa-bars"></i>
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
                                 </button>
                                 <!-- End Toggle Nav Link For Mobiles -->
                                 <a class="navbar-brand" href="trang-chu">
@@ -108,7 +109,6 @@
                                 <div class="search-side">
                                     <a class="show-search"><i class="fa fa-search"></i></a>
                                     <div class="search-form">
-                                        <%--<input type="text" value="" name="s" id="s" placeholder="Search the site..." />--%>
                                         <asp:TextBox ID="txtQuery" runat="server" OnTextChanged="txtQuery_TextChanged"></asp:TextBox>
                                     </div>
                                     <!-- /input-group -->
@@ -116,6 +116,7 @@
                                 <!-- End Search -->
                                 <!-- Start Navigation List -->
                                 <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="trang-chu"><i class="fa fa-home"></i></a></li>
                                     <%-- Start Menu --%>
                                     <asp:Repeater ID="rpMenu" runat="server">
                                         <ItemTemplate>
@@ -284,9 +285,19 @@
         <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
     </form>
 
-    <!-- Start Subiz Chat-->
-    <script type='text/javascript'>window._sbzq || function (e) { e._sbzq = []; var t = e._sbzq; t.push(["_setAccount", 38851]); var n = e.location.protocol == "https:" ? "https:" : "http:"; var r = document.createElement("script"); r.type = "text/javascript"; r.async = true; r.src = n + "//static.subiz.com/public/js/loader.js"; var i = document.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) }(window);</script>
-    <!-- End Subiz Chat-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/57738e83299ab05f483a59f8/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
     <!-- FB Fanpage Script-->
     <div id="fb-root"></div>
@@ -320,6 +331,7 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
     <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             new WOW().init();
@@ -335,6 +347,7 @@
             //Albums Funday
             $('[rel="prettyPhoto[funday]"]').prettyPhoto();
 
+            //Popup
             //Get AbsolutePath
             var url = window.location;
             var urlDefault = url.toString().substr(url.toString().lastIndexOf('/') + 1, url.toString().length);
@@ -353,6 +366,19 @@
                     $('.cover').removeClass('cover-menu');
                 });
             });
+            //End Popup
+
+            //Học tiếng anh owl carousel
+            $("#owl-hoctienganh").owlCarousel({
+
+                autoPlay: 2000, //Set AutoPlay to 3 seconds
+
+                items: 4,
+                itemsDesktop: [1199, 3],
+                itemsDesktopSmall: [979, 3]
+
+            });
+            //End Học tiếng anh owl carousel
         });
     </script>
 </body>
